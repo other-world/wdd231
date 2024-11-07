@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Final - Timpanogos Emergency Response Team - Jamie Cummings</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Final Project, TERT, Timpanogos Emergency Response Team">
+    <meta name="author" content="Jamie Cummings">
+    <!--link rel="stylesheet" href="styles/base.css"-->
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/gallery-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>TERT</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="wildflowers.html">Wildflowers</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid">
+        <main class="card">
+            <div class="hero">
+                <h2>Timpanogos Emergency Response Team</h2>
+                <figure>
+                    <picture>
+                        <source srcset="images/wildflowers5.jpg" media="(min-width: 550px)">
+                        <img src="images/wildflowers5.jpg" alt="Sunrise after a storm on Timpanogos" width="550"
+                            height="665">
+                    </picture>
+                    <figcaption>Photo by Jamie Cummigns</figcaption>
+                </figure>
+
+                <h2>Who we are</h2>
+                <p>Since 1983, our dedicated team of volunteers has helped safeguard Mt. Timpanogos visitors.</p>
+                <p>We are medical professionals, radio operators, and outdoor enthusiasts who all love being on the
+                    mountain and helping others.</p>
+            </div>
+        </main>
+
+        <aside class="card">
+            <h2>Join</h2>
+            <form class="newsletter-form">
+                <!-- <fieldset> -->
+                <!-- <legend>Contact Information</legend> -->
+                <label>Full Name:<br><input type="text" id="fullname" name="fullname"></label>
+                <label>Email:<br><input type="email" id="useremail" name="useremail"></label>
+                <button type="submit">Sign up</button>
+                <!-- </fieldset> -->
+            </form>
+        </aside>
+    </div>
+
+
+    <footer>
+        <p id="copywrite"></p>
+        <p id="modified"></p>
+    </footer>
+</body>
+
+</html>

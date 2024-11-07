@@ -1,0 +1,163 @@
+/* Style sheet for Jamie Cummings personal page. WDD 131 */
+:root {
+    --primary-color: #0693e3;
+    --secondary-color: white;
+    --accent2-color: #fcb900;
+    --accent1-color: #152750;
+    --font1-color: #152750;
+    --font2-color: white;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+    
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+:root {
+    --primary-color: #0693e3;
+    --secondary-color: white;
+    --accent2-color: #fcb900;
+    --accent1-color: #152750;
+    --font1-color: #152750;
+    --font2-color: white;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+    
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+header, body, footer {
+    width: 100%;
+    max-width: 960px;
+    margin: 1rem auto;
+    /*border: 1px solid rgb(165, 164, 164);*/
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3{
+    padding: .5rem;
+    text-align:center;
+    margin: auto;
+}
+
+h1{
+    font-family: var(--heading-font);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+h2{
+    background-color: var(--secondary-color);
+    color: var(--font1-color);
+    font-family: var(--heading-font);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "x";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: inline-flex;
+	padding: 1rem;
+    vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+    color: white;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+p { 
+    color: var(--font1-color);
+    padding: 0; 
+    margin: 1rem;
+}
+
+img {
+    height: auto;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
+    margin: 1rem;
+}
+
+#siteplan {
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    border-bottom: 1px solid #152750;
+}
+
+#wireframes {
+    display: flex;
+    padding: 1rem;
+}
+
