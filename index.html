@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 01 Project Work, About me">
+        <meta name="author" content="Jamie Cummings">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 Final - Timpanogos Emergency Response Team - Jamie Cummings</title>
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Final Project, TERT, Timpanogos Emergency Response Team">
-    <meta name="author" content="Jamie Cummings">
-    <!--link rel="stylesheet" href="styles/base.css"-->
-    <script src="scripts/getdates.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-large.css">
-    <link rel="stylesheet" href="styles/gallery.css">
-    <link rel="stylesheet" href="styles/gallery-large.css">
-</head>
+    <body>
+        <header>
+            <h1>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/jamie-cummings-827741114/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26">Scripture</a>
+                <a href="final-project.html">Final Project</a>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <h1>TERT</h1>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="weather.html">Weather</a></li>
-                <li><a href="wildflowers.html">Wildflowers</a></li>
-                <li><a href="siteplan.html">Site Plan</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="grid">
+            <main class="card">
+                <h2>Jamie Cummings | WDD 131</h2>
 
-    <div class="grid">
-        <main class="card">
-            <div class="hero">
-                <h2>Timpanogos Emergency Response Team</h2>
-                <figure>
-                    <picture>
-                        <source srcset="images/wildflowers5.jpg" media="(min-width: 550px)">
-                        <img src="images/wildflowers5.jpg" alt="Sunrise after a storm on Timpanogos" width="550"
-                            height="665">
-                    </picture>
-                    <figcaption>Photo by Jamie Cummigns</figcaption>
-                </figure>
+                <img class="profile" src="images/profile.jpg" alt="Jamie Cummings" width="200">
+                <p>Hello, I'm Jamie. I'm seeking a degree in Computer Science and Web Development. I studied CS and Information Technology at BYU-Provo, but never graduated. I know enough about computers to be successful in the job market. But the market is changing fast and I want a degree to help strength my weaknesses. </p>
+                <p>I love most things involving the outdoors. I keep a little homestead with chickens and rabbits. I also have two dogs. I love hiking, rock climbing, and especially canyoneering.</p>
+                
+                <h3>Utah</h3>
+                <img class="utah" src="images/hogwarts2.jpg" alt="Jamie Cummings" width="200">
+                <p>The State of Utah contains some of the most beautiful desert scenery in the world. The image above is taken in a particularly remote location. It's an arch hidden in a canyon called, Hogwarts. It can only be reached by rapelling down several cliffs, including one that runs down and through this arch. Canyoneering is one of my favorite activites. It requires careful planning, technical outdoors skills, and lots of teamwork.</p>
+            </main>
 
-                <h2>Who we are</h2>
-                <p>Since 1983, our dedicated team of volunteers has helped safeguard Mt. Timpanogos visitors.</p>
-                <p>We are medical professionals, radio operators, and outdoor enthusiasts who all love being on the
-                    mountain and helping others.</p>
-            </div>
-        </main>
+            <aside class="card">
+                <h2>Web Dev Resources</h2>
 
-        <aside class="card">
-            <h2>Join</h2>
-            <form class="newsletter-form">
-                <!-- <fieldset> -->
-                <!-- <legend>Contact Information</legend> -->
-                <label>Full Name:<br><input type="text" id="fullname" name="fullname"></label>
-                <label>Email:<br><input type="email" id="useremail" name="useremail"></label>
-                <button type="submit">Sign up</button>
-                <!-- </fieldset> -->
-            </form>
-        </aside>
-    </div>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla CSS</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">Mozilla Javascript</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">W3 Schools</a><br>
+                <a href="https://www.jshero.net/en/koans/var2.html">Javascript Hero</a><br>
+            </aside>
+        </div>
 
 
-    <footer>
-        <p id="copywrite"></p>
-        <p id="modified"></p>
-    </footer>
-</body>
-
+        <footer>
+            <p id="copywrite"></p>
+            <p id="modified"></p>
+        </footer>
+    </body>
 </html>
