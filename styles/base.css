@@ -18,21 +18,19 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
     border: 1px solid steelblue;
+    /* temp */
 }
 
 header,
 main,
 footer {
     margin: 0 auto;
-    max-width: 1000px;
-    justify-content: center;
+    width: 100%;
     font-family: var(--paragraph-font);
     font-weight: 400;
     border: 5px solid green;
 }
-
 
 header,
 footer {
@@ -40,17 +38,19 @@ footer {
     min-height: max-content;
 }
 
-#head {
-    grid-column: 1 / 4;
+/* topbar does not include navigation */
+#topbar {
     border: 5px solid pink;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 450px;
     padding: .5rem;
     text-align: center;
     margin: auto;
 }
 
+/* hamburger menu */
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -125,8 +125,8 @@ h3 {
 
 main {
     display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: 3;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 section {
@@ -136,18 +136,15 @@ section {
 }
 
 #course-work {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
 }
 
 #location {
-    grid-column-start: 3;
-    display: flex;
-    flex-direction: column;
-
+    grid-column-start: 2;
 }
 
 #certificate-progress {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
 
 }
 
@@ -182,7 +179,6 @@ figcaption {
 
 p {
     padding: 0;
-    margin: 1rem;
 }
 
 footer {
