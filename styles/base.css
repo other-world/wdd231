@@ -1,15 +1,13 @@
 /* Style sheet for Jamie Cummings personal page. WDD 131 */
 :root {
-    --primary-color: #0693e3;
-    --secondary-color: white;
-    --accent2-color: #fcb900;
-    --accent1-color: #152750;
-    --font1-color: #152750;
-    --font2-color: white;
+    --primary-color: #000000;
+    --secondary-color: rgb(251, 251, 251);
+    --accent1-color: #054A91;
+    --accent2-color: #F17300;
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Gupter', serif;
-    
+
     --nav-bg-color: var(--primary-color);
     --nav-link-color: var(--accent1-color);
     --nav-visited-color: #0d1c92;
@@ -17,147 +15,186 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
-:root {
-    --primary-color: #0693e3;
-    --secondary-color: white;
-    --accent2-color: #fcb900;
-    --accent1-color: #152750;
-    --font1-color: #152750;
-    --font2-color: white;
-
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Gupter', serif;
-    
-    --nav-bg-color: var(--primary-color);
-    --nav-link-color: var(--accent1-color);
-    --nav-visited-color: #0d1c92;
-    --nav-hover-link-color: var(--accent2-color);
-    --nav-hover-background-color: var(--accent2-color);
+body,
+header,
+.grid,
+footer {
+    margin: 0 auto;
+    max-width: 1000px;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+    font-weight: 400;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+header,
+footer {
+    background-color: var(--accent1-color);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-header, footer {
-    background-color: var(--primary-color);
-    color: white;
-}
-header, body, footer {
-    width: 100%;
-    max-width: 960px;
-    margin: 1rem auto;
-    /*border: 1px solid rgb(165, 164, 164);*/
-    padding: 1rem;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-h1 {
+.head {
+    width: 500px;
+    border: 5px solid pink;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-h1, h2, h3{
     padding: .5rem;
-    text-align:center;
+    text-align: center;
     margin: auto;
 }
 
-h1{
+nav {
+    background-color: var(--nav-bg-color);
     font-family: var(--heading-font);
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-h2{
-    background-color: var(--secondary-color);
-    color: var(--font1-color);
-    font-family: var(--heading-font);
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
 }
 
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
-}
-
-#menu::before {
-	content: "≡";
-}
-
-#menu.show::before {
-	content: "x";
-}
-
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
-}
-
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: inline-flex;
-	padding: 1rem;
-    vertical-align: middle;
-	text-align: center;
-	text-decoration: none;
-	font-weight: 700;
-	transition: 0.5s;
+nav a:link {
     color: white;
 }
 
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
+nav a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
-.show li {
-	display: block;
+body {
+    height: 100%;
+    /* border: 1px solid steelblue; */
 }
 
-p { 
-    color: var(--font1-color);
-    padding: 0; 
-    margin: 1rem;
+h1,
+h2,
+h3 {
+    padding: .5rem;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+h2 {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    border: 1px solid steelblue;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0 0 15px;
+}
+
+main {
+    grid-column: 1/3;
+    height: 100%;
 }
 
 img {
+    width: 150px;
     height: auto;
     padding: 2px;
     box-shadow: 0 0 10px gray;
     margin: 1rem;
 }
 
-#siteplan {
-    text-align: left;
+main img {
+    float: right;
+
 }
 
-h2 {
-    text-align: left;
-    border-bottom: 1px solid #152750;
+p {
+    padding: 0;
+    margin: 1rem;
 }
 
-#wireframes {
+aside {
+    grid-column: 3/3;
+    position: relative;
+    justify-content: center;
+    width: 20rem;
+    height: 100%;
+    background-color: white;
+    border: 1px solid steelblue;
+    text-align: center;
+}
+
+aside img {
+    float: left;
+}
+
+aside a:link {
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: larger;
+    font-weight: 300;
+    color: var(--nav-link-color);
+    padding-top: 20px;
+
+
 }
 
+aside a:hover {
+    text-decoration: underline;
+    color: var(--nav-hover-link-color);
+}
+
+aside a:visited,
+a:visited:hover {
+    text-decoration: underline;
+    color: var(--nav-visited-color);
+}
+
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-size: large;
+}

@@ -1,4 +1,4 @@
-console.log("Hello World");
+//console.log("Hello World");
 //document = "getdates.js";
 const yr = new Date().getFullYear();
 const lastModified = document.lastModified;
