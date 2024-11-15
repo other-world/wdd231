@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+section {
+    /*border: 1px solid var(--accent1-color);*/
+    border-radius: 10px;
+    margin: 5px;
+    /*temp*/
+    box-shadow: 0 0 10px gray;
+}
+
+#course-work {
+    
+}
+
+#location {
+
+}
+
+#certificate-progress {
+
+}

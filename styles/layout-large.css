@@ -1,0 +1,29 @@
+@media screen and (min-width: 500px){
+
+    main {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    section {
+        /*border: 1px solid var(--accent1-color);*/
+        border-radius: 10px;
+        margin: 5px;
+        /*temp*/
+        box-shadow: 0 0 10px gray;
+    }
+
+    #course-work {
+        grid-column: 1 / 2;
+    }
+
+    #location {
+        grid-column-start: 2;
+    }
+
+    #certificate-progress {
+        grid-column: 1 / 3;
+
+    }
+}
