@@ -131,7 +131,7 @@ ul {
 img {
     max-width: 200px;
     height: auto;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 30px gray;
 }
 
 figure {
@@ -140,14 +140,13 @@ figure {
 
 figure img {
     display: block;
-    padding: .5rem;
     margin: auto;
 
 }
 
 figcaption {
-
-    color: black;
+    color: white;
+    background-color: black;
     text-align: center;
     font-weight: 200;
     bottom: 5;
