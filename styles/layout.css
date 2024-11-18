@@ -46,6 +46,12 @@ nav a:hover {
     text-decoration: none;
 }
 
+nav .active {
+    background-color: rgb(210, 210, 161);
+    color: rgb(63, 60, 60);
+    text-decoration: none;
+}
+
 section {
     /*border: 1px solid var(--accent2-color);*/
     border-radius: 10px;
