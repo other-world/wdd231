@@ -77,3 +77,114 @@ const courses = [
         completed: false
     }
 ]
+
+// Populate default / all courses
+displayCourses(courses);
+displayCourseWork();
+
+
+allLink=document.querySelector("#allCourses");
+cseLink=document.querySelector("#cseCourses");
+wddLink=document.querySelector("#wddCourses");
+
+allLink.addEventListener('click', () => {
+    console.clear();
+    console.log("Clicked All Button");
+    displayCourses(courses);
+})
+
+cseLink.addEventListener('click', ()  => {
+    console.clear();
+    console.log("Clicked CSE Button");
+    let cseCourses = courses.filter(courses => courses.subject.includes("CSE"));
+    displayCourses(cseCourses);
+    //console.log(cseCourses);
+})
+
+wddLink.addEventListener('click', () => {
+    console.clear();
+    console.log("Clicked WDD Button");
+    let wddCourses = courses.filter(courses => courses.subject.includes("WDD"));
+    displayCourses(wddCourses);
+    //console.log(wddCourses);
+})
+
+// Default * Show all courses
+function displayCourses(filteredCourses){
+    console.clear();
+    console.log(filteredCourses);
+
+
+    // Get courseListResults div and clear it out
+    let courseList = document.getElementById("courseListResults");
+    courseList.innerHTML = "";
+    console.log(courseList);
+
+    filteredCourses.forEach(element => {
+        let fullCourseName = element.subject + " " + element.number;
+        let finished = element.completed;
+        //console.log(fullCourseName);
+        //console.log(finished);
+        
+        // build html
+        let newCourse = document.createElement("p");
+        newCourse.setAttribute('class', finished);
+        newCourse.innerHTML = fullCourseName;
+
+        courseList.appendChild(newCourse);
+
+        //htmlText = "<p class=" + finished + ">" + fullCourseName + "</p>\n" ;
+        //newCourse.classlist.add(finished);
+        //console.log(htmlText);
+
+    });
+}
+
+function displayCourseWork() {
+    console.log("Entering Course Work");
+    let certificateCourseList = document.getElementById("courseWork");
+    certificateCourseList.innerHTML="";
+
+    let creditTotal = 0;
+
+    courses.forEach(element => {
+        //console.log("Currently credit total: " + creditTotal);
+        //console.log("Course credits: " + element.credits);
+
+        let fullCourseName = element.subject + " " + element.number + " - " + element.title;
+        let credits = element.credits;
+        
+        let newCourse = document.createElement("div");
+
+        let courseName = document.createElement("p");
+            courseName.innerText = fullCourseName;
+        let courseCredits = document.createElement("p");
+            courseCredits.innerText = credits + " credits";
+
+        newCourse.setAttribute('class', 'course-credits');
+        certificateCourseList.appendChild(newCourse);
+        newCourse.appendChild(courseName);
+        newCourse.appendChild(courseCredits);
+
+
+        creditTotal += parseInt(element.credits);
+        //console.log("credits before: " + credit);
+
+    })
+
+    let newCourse = document.createElement("div");
+    newCourse.setAttribute('class', 'tally');
+    certificateCourseList.appendChild(newCourse);
+
+    let totalCourse = document.createElement("p");
+        totalCourse.innerText = "Total Course Credits:";
+    let totalCredits = document.createElement("p");
+        totalCredits.innerText = creditTotal + " credits";
+
+    newCourse.appendChild(totalCourse);
+    newCourse.appendChild(totalCredits);
+    
+}
+
+
+

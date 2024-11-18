@@ -4,6 +4,48 @@ main {
     grid-template-columns: 1fr;
 }
 
+/*.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}*/
+
+nav ul{
+    /* Puts the elements in a single line */
+    display: inline-flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    font-family: var(--heading-font);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:hover {
+    background-color: azure;
+    color: rgb(63, 60, 60);
+    text-decoration: none;
+}
+
 section {
     /*border: 1px solid var(--accent2-color);*/
     border-radius: 10px;
@@ -12,14 +54,53 @@ section {
     box-shadow: 0 0 10px gray;
 }
 
-#course-work {
+#coursework {
 
 }
 
-#location {
-
+.course-credits {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    border-bottom: 1px solid rgb(210, 210, 161);
 }
+.tally {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    border-top: 2px solid rgb(210, 210, 161);
+    font-weight: 700;
+}
+
+#location {}
 
 #certificate-progress {
 
+}
+
+#courseListOptions {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 20px;
+
+    max-width: 250px;
+
+}
+
+#courseListResults {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid gainsboro;
+}
+.true{
+    background-color: rgb(210, 210, 161);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.false {
+    background-color: rgb(227, 205, 162);
+    padding: 10px 30px;
+    border-radius: 5px;
 }

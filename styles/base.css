@@ -51,51 +51,6 @@ footer {
 
 }
 
-/* hamburger menu */
-#menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    position: right;
-
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "❎";
-}
-
-nav {
-    background-color: var(--nav-bg-color);
-    font-family: var(--heading-font);
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: large;
-    font-weight: 700;
-}
-
-nav a:link {
-    color: white;
-}
-
-nav a:hover {
-    background-color: azure;
-    color: rgb(63, 60, 60);
-    text-decoration: none;
-}
-
 h1,
 h2,
 h3 {
@@ -122,12 +77,6 @@ h3 {
     color: var(--secondary-color);
 }
 
-
-
-ul {
-    list-style-type: none;
-}
-
 img {
     max-width: 200px;
     height: auto;
@@ -149,7 +98,6 @@ figcaption {
     background-color: black;
     text-align: center;
     font-weight: 200;
-    bottom: 5;
     max-width: 200px;
     padding: 0px;
     margin: auto;

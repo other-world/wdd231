@@ -1,4 +1,13 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    nav ul {
+        list-style-type: none;
+    }
 
     main {
         display: grid;

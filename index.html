@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
     <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/courses.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -29,21 +30,28 @@
         </div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="https://github.com/other-world/">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/jamie-cummings-827741114/">LinkedIn</a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/other-world/">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jamie-cummings-827741114/">LinkedIn</a></li>
+            </ul>
         </nav>
     </header>
 
     <main id="main-grid">
-        <section id="course-work">
+        <section>
             <h3>Course Work</h3>
-            <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 3</li>
-            </ul>
+            <div id="courseWork">
+                <div class="course-credits">
+                    <p>CSE 111</p>
+                    <p>2</p>
+                </div>
+                    <div class="course-credits">
+                    <p>Test 3</p>
+                    <p>Test 4</p>
+                </div>
+            </div>
         </section>
 
         <section id="location">
@@ -56,12 +64,20 @@
 
         <section id="certificate-progress">
             <h3>Web and Computer Programming Certificate</h3>
+            <div id="courseListOptions">
+                <button id="allCourses" class="active">ALL</button>
+                <button id="cseCourses">CSE</button>
+                <button id="wddCourses">WDD</button>
+            </div>
+            <div id="courseListResults">
+
+            </div>
         </section>
     </main>
 
     <footer>
         <p id="copywrite"></p>
-        <p id="modified"></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 

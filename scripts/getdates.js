@@ -11,4 +11,4 @@ const place = "Utah, USA";
 
 // Trying the Javascript using hte querySelector instead of getElementById
 document.querySelector('#copywrite').innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
-document.querySelector('#modified').innerHTML = `Last Modified ${lastModified}`;
+document.querySelector('#lastModified').innerHTML = `Last Modified ${lastModified}`;
