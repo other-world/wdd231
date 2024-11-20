@@ -4,14 +4,49 @@ main {
     grid-template-columns: 1fr;
 }
 
-/*.navigation {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}*/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "❎";
+}
+/* .navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: inline-flex;
+	padding: 1rem;
+    vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+    color: white;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+} */
 
 nav ul{
-    /* Puts the elements in a single line */
     display: inline-flex;
     margin: auto;
     justify-content: space-evenly;
@@ -55,13 +90,12 @@ nav .active {
 section {
     /*border: 1px solid var(--accent2-color);*/
     border-radius: 10px;
-    margin: 5px;
     /*temp*/
     box-shadow: 0 0 10px gray;
 }
 
 #coursework {
-
+    max-width: 450px;
 }
 
 .course-credits {
@@ -88,24 +122,32 @@ section {
 
 #courseListOptions {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 10px auto 20px;
-
     max-width: 250px;
-
 }
 
 #courseListResults {
-    display: flex;
-    justify-content: space-evenly;
+    /*display: flex;
+    justify-content: space-evenly;*/
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: space-around;
+    column-gap: 40px;
     border-top: 1px solid gainsboro;
+    margin: auto;
+    max-width: 600px;
 }
 .true{
+    display: flex;
+    justify-content: center;
     background-color: rgb(210, 210, 161);
     padding: 10px 30px;
     border-radius: 5px;
 }
 .false {
+    display: flex;
+    justify-content: center;
     background-color: rgb(227, 205, 162);
     padding: 10px 30px;
     border-radius: 5px;
