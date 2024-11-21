@@ -19,7 +19,9 @@ main {
 }
 
 #menu.show::before {
-    content: "❎";
+    content: "x";
+    font-family: var(--heading-font);
+    font-weight: 400;
 }
 
 nav {
@@ -61,6 +63,14 @@ nav a:link {
     width: 85%;
 }
 
+.navigation li {
+	display: none;
+}
+
+.show li {
+	display: flex;
+}
+
 .navigation a:hover, navigation a:active {
 	color: black;
 	background-color: white;
@@ -77,6 +87,7 @@ section {
     border-radius: 10px;
     /*temp*/
     box-shadow: 0 0 10px gray;
+    max-width: 100%;
 }
 
 #coursework {

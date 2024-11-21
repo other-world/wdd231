@@ -80,7 +80,7 @@ const courses = [
 
 // Populate default / all courses
 displayCourses(courses);
-displayCourseWork();
+displayCourseWork(courses);
 
 
 allLink=document.querySelector("#allCourses");
@@ -91,6 +91,7 @@ allLink.addEventListener('click', () => {
     console.clear();
     console.log("Clicked All Button");
     displayCourses(courses);
+    displayCourseWork(courses);
 })
 
 cseLink.addEventListener('click', ()  => {
@@ -98,6 +99,7 @@ cseLink.addEventListener('click', ()  => {
     console.log("Clicked CSE Button");
     let cseCourses = courses.filter(courses => courses.subject.includes("CSE"));
     displayCourses(cseCourses);
+    displayCourseWork(cseCourses);
     //console.log(cseCourses);
 })
 
@@ -106,13 +108,14 @@ wddLink.addEventListener('click', () => {
     console.log("Clicked WDD Button");
     let wddCourses = courses.filter(courses => courses.subject.includes("WDD"));
     displayCourses(wddCourses);
+    displayCourseWork(wddCourses);
     //console.log(wddCourses);
 })
 
 // Default * Show all courses
 function displayCourses(filteredCourses){
     console.clear();
-    console.log(filteredCourses);
+    //console.log(filteredCourses);
 
 
     // Get courseListResults div and clear it out
@@ -140,14 +143,14 @@ function displayCourses(filteredCourses){
     });
 }
 
-function displayCourseWork() {
+function displayCourseWork(filteredCourses) {
     console.log("Entering Course Work");
     let certificateCourseList = document.getElementById("courseWork");
     certificateCourseList.innerHTML="";
 
     let creditTotal = 0;
 
-    courses.forEach(element => {
+    filteredCourses.forEach(element => {
         //console.log("Currently credit total: " + creditTotal);
         //console.log("Course credits: " + element.credits);
 
