@@ -8,15 +8,19 @@
     <meta name="description"
         content="WDD 231 - Web Frontend Development I, Jamie Cummings, Week 01 Project Work, About me">
     <meta name="author" content="Jamie Cummings">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
+    <!-- Style Sheets (CSS) -->
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
 
+    <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/courses.js" defer></script>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -24,11 +28,20 @@
         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Social media meta tags -->
     <meta property="og:title" content="WDD231 Landing page for Jamie Cummings">
-    <meta property="og:description" content="WDD231 focuses on Fonrtend Web Development Skill. This page shows the work done by Jamie Cummings.">
+    <meta property="og:description"
+        content="WDD231 focuses on Fonrtend Web Development Skill. This page shows the work done by Jamie Cummings.">
     <meta property="og:image" content="https://other-world.github.io/wdd231/images/profile.webp">
     <meta property="og:url" content="https://other-world.github.io/wdd231/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:title" content="WDD231 Landing page for Jamie Cummings">
+    <meta name="twitter:description"
+        content="WDD231 focuses on Fonrtend Web Development Skill. This page shows the work done by Jamie Cummings.">
+    <meta name="twitter:image" content="https://other-world.github.io/wdd231/images/profile.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
 </head>
 
 <body>
@@ -41,17 +54,19 @@
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="./chamber/">Chamber</a></li>
-                <li><a href="https://github.com/other-world/" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/jamie-cummings-827741114/" target="_blank">LinkedIn</a></li>
+                <li><a href="#" class="active" aria-label="Home Page">Home</a></li>
+                <li><a href="./chamber/" aria-label="Chamber of Comerce Project">Chamber</a></li>
+                <li><a href="https://github.com/other-world/" aria-label="Other-World GitHub Profile"
+                        target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jamie-cummings-827741114/"
+                        aria-label="Jamie Cummings LinkedIn Profile" target="_blank">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-grid">
         <section>
-            <h3>Course Work</h3>
+            <h2>Course Work</h2>
             <div id="courseWork">
                 <div class="course-credits">
                     <p>CSE 111</p>
@@ -65,7 +80,7 @@
         </section>
 
         <section id="location">
-            <h3>Utah</h3>
+            <h2>Utah</h2>
             <figure>
                 <img class="utah" src="./images/hogwarts2.webp" alt="Hogwarts Cayon" width="200">
                 <figcaption>Hogwarts Canyon Arch, Utah</figcaption>
@@ -73,7 +88,7 @@
         </section>
 
         <section id="certificate-progress">
-            <h3>Web and Computer Programming Certificate</h3>
+            <h2>Web and Computer Programming Certificate</h2>
             <div id="courseListOptions">
                 <button id="allCourses" class="active">ALL</button>
                 <button id="cseCourses">CSE</button>

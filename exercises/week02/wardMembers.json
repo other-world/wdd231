@@ -1,0 +1,18 @@
+{
+    "familyName": "Cummings",
+    "moveinDate": 2012,
+    "peopleInFamily": 2,
+    "visitedByBishopric": true,
+    "numberInFamily": [
+        {
+            "name": "Jamie",
+            "gender": "Female",
+            "DOB": "02 July 1980"
+        },
+        {
+            "name": "Victoria",
+            "gender": "Female",
+            "DOB": "22 December 1980"
+        }
+    ]
+}

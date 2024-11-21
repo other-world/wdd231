@@ -3,7 +3,7 @@
     --primary-color: #000000;
     --secondary-color: rgb(251, 251, 251);
     --accent1-color: #054A91;
-    --accent2-color: #F17300;
+    --accent2-color: #e4cc7a;
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Gupter', serif;
@@ -54,6 +54,7 @@ footer {
 h1,
 h2,
 h3 {
+    color: var(--secondary-color);
     padding: .5rem;
     text-align: center;
     margin: auto;
@@ -63,18 +64,15 @@ h3 {
 }
 
 h1 {
-
-    color: var(--secondary-color);
     font-family: var(--heading-font);
 }
 
 h2 {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
 }
 
 h3 {
-    color: var(--secondary-color);
+    
 }
 
 img {

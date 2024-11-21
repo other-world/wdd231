@@ -68,9 +68,10 @@ nav a:link {
 }
 
 nav .active {
-    background-color: var(--accent1-color);
+    border-bottom: 5px solid var(--accent1-color);
     color: rgb(63, 60, 60);
     text-decoration: none;
+    text-align: center;
 }
 
 section {
