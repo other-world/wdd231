@@ -8,10 +8,6 @@
         justify-content: space-between;
     } 
 
-    nav ul {
-        list-style-type: none;
-    }
-
     nav ul{
     display: inline-flex;
     margin: auto;
@@ -28,27 +24,8 @@ nav {
     align-items: center;
 }
 
-nav a {
-    color: white;
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: large;
-    font-weight: 700;
-}
-
-nav a:link {
-    color: white;
-}
-
 nav a:hover {
     background-color: azure;
-    color: rgb(63, 60, 60);
-    text-decoration: none;
-}
-
-nav .active {
-    background-color: rgb(210, 210, 161);
     color: rgb(63, 60, 60);
     text-decoration: none;
 }

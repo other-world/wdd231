@@ -5,31 +5,50 @@ main {
 }
 
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #eee;
-	color: #000;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
 }
 
 #menu::before {
-	content: "≡";
+    content: "≡";
 }
 
 #menu.show::before {
-	content: "❎";
+    content: "❎";
 }
-/* .navigation {
+
+nav {
+	background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+}
+
+nav a:link {
+    color: white;
+}
+
+.navigation {
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
 }
 
-.navigation li {
-	display: none;
-}
 .navigation a {
 	display: inline-flex;
 	padding: 1rem;
@@ -39,14 +58,25 @@ main {
 	font-weight: 700;
 	transition: 0.5s;
     color: white;
+    width: 85%;
 }
 
 .navigation a:hover, navigation a:active {
-	color: white;
-	background-color: black;
-} */
+	color: black;
+	background-color: white;
+}
 
-nav ul{
+nav .active {
+    background-color: rgb(210, 210, 161);
+    color: rgb(63, 60, 60);
+    text-decoration: none;
+}
+
+/*.navigation li {
+	display: none;
+}*/
+
+/* nav ul{
     display: inline-flex;
     margin: auto;
     justify-content: space-evenly;
@@ -85,7 +115,34 @@ nav .active {
     background-color: rgb(210, 210, 161);
     color: rgb(63, 60, 60);
     text-decoration: none;
+} */
+
+/* .navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
 }
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: inline-flex;
+	padding: 1rem;
+    vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+    color: white;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+} */
+
+
 
 section {
     /*border: 1px solid var(--accent2-color);*/
@@ -105,6 +162,7 @@ section {
     margin: auto;
     border-bottom: 1px solid rgb(210, 210, 161);
 }
+
 .tally {
     display: flex;
     justify-content: space-between;
@@ -116,9 +174,7 @@ section {
 
 #location {}
 
-#certificate-progress {
-
-}
+#certificate-progress {}
 
 #courseListOptions {
     display: flex;
@@ -138,13 +194,15 @@ section {
     margin: auto;
     max-width: 600px;
 }
-.true{
+
+.true {
     display: flex;
     justify-content: center;
     background-color: rgb(210, 210, 161);
     padding: 10px 30px;
     border-radius: 5px;
 }
+
 .false {
     display: flex;
     justify-content: center;
