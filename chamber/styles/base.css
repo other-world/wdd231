@@ -2,11 +2,12 @@
 :root {
     --primary-color: #000000;
     --secondary-color: rgb(251, 251, 251);
-    --accent1-color: #d4b85d;
-    --accent2-color: #F17300;
+    --accent1-color: #e4cc7a;
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Gupter', serif;
+    --font-color-primary: black;
+    --font-color-secondary: white;
 
     --nav-bg-color: var(--primary-color);
     --nav-link-color: var(--accent1-color);
@@ -18,6 +19,8 @@
 body {
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(rgb(239, 233, 233), rgb(139, 139, 135));
+    height: 100%;
     /*border: 1px solid steelblue;*/
     /* temp */
 }
@@ -30,17 +33,17 @@ footer {
     font-family: var(--paragraph-font);
     font-weight: 400;
     /*border: 5px solid green;*/
+    background-color: white;
 }
 
 header,
 footer {
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     min-height: max-content;
 }
 
 /* topbar does not include navigation */
 #topbar {
-    /*border: 5px solid pink;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,14 +60,12 @@ h3 {
     padding: .5rem;
     text-align: center;
     margin: auto;
-    background-color: var(--accent1-color);
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+    background-color: var(--secondary-color);
 }
 
 h1 {
-
-    color: var(--secondary-color);
+    min-width: fit-content;
+    color: var(--font-color-primary);
     font-family: var(--heading-font);
 }
 
@@ -74,13 +75,34 @@ h2 {
 }
 
 h3 {
-    color: var(--secondary-color);
+    color: var(--secondary-color-primary);
 }
 
-img {
-    max-width: 200px;
+section, topbar {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 0 10px gray;
+}
+section h3 {
+    background-color:var(--accent1-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.hero {
+    margin: 20px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.hero img {
+    display: flex;
+    width: 95%;
     height: auto;
     box-shadow: 0 0 30px gray;
+    margin: auto;
 }
 
 figure {
@@ -114,11 +136,8 @@ li {
 footer {
     margin-top: 10px;
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
 }
 
 footer p {
-    color: var(--secondary-color);
     font-size: large;
 }
