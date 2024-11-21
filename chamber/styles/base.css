@@ -1,0 +1,124 @@
+/* Style sheet for Jamie Cummings personal page. WDD 131 */
+:root {
+    --primary-color: #000000;
+    --secondary-color: rgb(251, 251, 251);
+    --accent1-color: #d4b85d;
+    --accent2-color: #F17300;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid steelblue;*/
+    /* temp */
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    width: 100%;
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    /*border: 5px solid green;*/
+}
+
+header,
+footer {
+    background-color: var(--accent1-color);
+    min-height: max-content;
+}
+
+/* topbar does not include navigation */
+#topbar {
+    /*border: 5px solid pink;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    padding: .5rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+h1,
+h2,
+h3 {
+    padding: .5rem;
+    text-align: center;
+    margin: auto;
+    background-color: var(--accent1-color);
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+h1 {
+
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+}
+
+figure {
+    position: relative;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+
+}
+
+figcaption {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: 200;
+    max-width: 200px;
+    padding: 0px;
+    margin: auto;
+}
+
+p {
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-size: large;
+}

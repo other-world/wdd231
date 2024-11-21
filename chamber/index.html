@@ -4,21 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fieldtown Chamber of Commerce Directory</title>
-    <meta name="Fieldtown Chamber of Commerce Directory" content="Fieldtown local businesses">
-
-    <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Information on businesses in Fieldtown">
-    <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
-    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
-    <meta name="twitter:card" content="summary_large_image">
-
+    <title>Fieldtown Chamber of Commerce</title>
+    <meta name="description"
+        content="Project page for WDD 231, Also known as the Fieldtown Chamber of Commerce">
     <meta name="author" content="Jamie Cummings">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
     <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/courses.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -30,15 +24,15 @@
 <body>
     <header>
         <div id="topbar">
-            <h1>Fieldtown Chamber of Commerce - Directory</h1>
+            <h1>Fieldtown Chamber of Commerce</h1>
         </div>
 
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -58,6 +52,11 @@
             </figure>
         </section>
     </main>
+
+    <footer>
+        <p id="copywrite"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
