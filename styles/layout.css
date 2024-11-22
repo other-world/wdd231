@@ -12,6 +12,7 @@ main {
     padding: .5rem .75rem;
     background-color: #eee;
     color: #000;
+    cursor: pointer;
 }
 
 #menu::before {
@@ -69,6 +70,7 @@ nav a:link {
 
 .show li {
 	display: flex;
+    transition: display;
 }
 
 .navigation a:hover, navigation a:active {
@@ -82,17 +84,9 @@ nav .active {
     text-decoration: none;
 }
 
-section {
-    /*border: 1px solid var(--accent2-color);*/
-    border-radius: 10px;
-    /*temp*/
-    box-shadow: 0 0 10px gray;
-    max-width: 100%;
-}
-
 #coursework {
-    max-width: 450px;
-}
+/*     max-width: 450px;
+ */}
 
 .course-credits {
     display: flex;
@@ -131,7 +125,7 @@ section {
     column-gap: 40px;
     border-top: 1px solid gainsboro;
     margin: auto;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .true {

@@ -40,14 +40,6 @@
         grid-template-columns: 2fr 1fr;
     }
 
-    section {
-        /*border: 1px solid var(--accent1-color);*/
-        border-radius: 10px;
-        margin: 5px;
-        /*temp*/
-        box-shadow: 0 0 10px gray;
-    }
-
     #courseWork {
         grid-column: 1 / 2;
         min-height: 370px;
