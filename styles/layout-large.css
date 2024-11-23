@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -17,6 +17,10 @@
 
     .navigation li {
         display: flex;
+    }
+
+    .navigation a {
+        padding: 10px 1rem 2px 1rem;
     }
 
     nav {
@@ -38,6 +42,10 @@
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 2fr 1fr;
+    }
+    
+    h1 {
+        font-size: xx-large;
     }
 
     #courseWork {

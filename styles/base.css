@@ -26,15 +26,16 @@ header,
 main,
 footer {
     margin: 0 auto;
-    min-width: 100%;
+    width: 100%;
     font-family: var(--paragraph-font);
     font-weight: 400;
-    border: 5px solid green;}
+    /* border: 5px solid green; */}
 
 header,
 footer {
     background-color: var(--accent1-color);
     min-height: max-content;
+    min-width: 320px;
 }
 
 /* topbar does not include navigation */
@@ -59,11 +60,12 @@ h3 {
     text-align: center;
     margin: auto;
     border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+    border-top-right-radius: 10px 10px
 }
 
 h1 {
     font-family: var(--heading-font);
+    font-size: 5vw;
 }
 
 section h2 {

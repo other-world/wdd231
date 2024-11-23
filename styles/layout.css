@@ -36,10 +36,11 @@ nav ul {
 nav a {
     color: white;
     display: block;
-    padding: 0.5rem;
+
     text-decoration: none;
     font-size: large;
     font-weight: 700;
+    max-width: 150px;
 }
 
 nav a:link {
@@ -54,8 +55,8 @@ nav a:link {
 
 .navigation a {
 	display: inline-flex;
-	padding: 1rem;
     vertical-align: middle;
+    padding: 10px 5px;
 	text-align: center;
 	text-decoration: none;
 	font-weight: 700;
@@ -74,35 +75,35 @@ nav a:link {
 }
 
 .navigation a:hover, navigation a:active {
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: rgb(76, 74, 74);
 }
 
 nav .active {
     border-bottom: 5px solid var(--accent2-color);
-    color: rgb(63, 60, 60);
+    color: white;
     text-decoration: none;
 }
 
 #coursework {
-/*     max-width: 450px;
- */}
+     max-width: 0;
+}
 
 .course-credits {
     display: flex;
     justify-content: space-between;
-    width: 500px;
     margin: auto;
+    padding: 2px 10px 2px 10px;
     border-bottom: 1px solid rgb(210, 210, 161);
 }
 
 .tally {
     display: flex;
     justify-content: space-between;
-    width: 500px;
     margin: auto;
     border-top: 2px solid rgb(210, 210, 161);
     font-weight: 700;
+    padding: 0px 10px;
 }
 
 #location {}
