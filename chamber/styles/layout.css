@@ -69,7 +69,7 @@ nav a:link {
 
 nav .active {
     border-bottom: 5px solid var(--accent1-color);
-    color: rgb(63, 60, 60);
+    color: var(--font-color-secondary);
     text-decoration: none;
     text-align: center;
 }

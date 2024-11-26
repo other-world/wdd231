@@ -4,60 +4,77 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fieldtown Chamber of Commerce Directory</title>
-    <meta name="Fieldtown Chamber of Commerce Directory" content="Fieldtown local businesses">
-
-    <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Information on businesses in Fieldtown">
-    <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
-    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
-    <meta name="twitter:card" content="summary_large_image">
+    <title>Provo Chamber of Commerce Directory</title>
+    <meta name="Provo Chamber of Commerce Directory" content="Provo local businesses">
 
     <meta name="author" content="Jamie Cummings">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/layout-large.css">
-    <script src="./scripts/getdates.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
-        rel="stylesheet">
+     <!-- Style Sheets (CSS) -->
+     <link rel="stylesheet" href="./styles/base.css">
+     <link rel="stylesheet" href="./styles/layout.css">
+     <link rel="stylesheet" href="./styles/layout-large.css">
+     <link rel="stylesheet" href="./styles/directory.css">
+
+ 
+     <!-- Supporting Javascript -->
+     <script src="./scripts/getdates.js" defer></script>
+     <!--script src="./scripts/menu.js" defer></script>
+     <script src="./scripts/courses.js" defer></script-->
+    <script src="./scripts/directory.js" defer></script>
+
+ 
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+     <link
+         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
+         rel="stylesheet">
+ 
+     <!-- Social media meta tags -->
+     <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
+     <meta property="og:type" content="website" />
+     <meta property="og:description" content="Information on businesses in Fieldtown">
+     <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
+     <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
+     <meta name="twitter:card" content="summary_large_image">
+
 </head>
 
 <body>
     <header>
         <div id="topbar">
-            <h1>Fieldtown Chamber of Commerce - Directory</h1>
+            <img src="./images/provo-city-logo.webp" alt="City of Provo Logo - Welcome Home" width="200" height="86">
+            <h1>Chamber of Commerce</h1>
         </div>
 
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-grid">
-        <section>
-            <h3>Course Work</h3>
+        <!-- div class="hero">
+            <img src="./images/provoHero.webp" alt="View of Mount Timpanogos from Provo, Utah">
+        </div -->
+        <div id="directoryButton">
+            <img src="./images/gridIcon.png" width="30px" height="30px" alt="grid icon" id="gridToggle">
+            <img src="./images/listIcon.png" width="30px" height="30px" alt="list icon" id="listToggle">
+        </div>
 
-        </section>
-
-        <section id="location">
-            <h3>Fieldtown</h3>
-            <figure>
-                <img class="utah" src="./images/commerce.png" alt="Fieldtown, Utah" width="200">
-                <figcaption>Fieldtown, Utah</figcaption>
-            </figure>
-        </section>
+        <div id="businessDirectory">
+        </div>   
     </main>
+
+    <footer>
+        <p id="copywrite"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

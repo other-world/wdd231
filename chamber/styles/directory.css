@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin auto;
+}
+#directoryButton {
+    display: flex;
+    justify-content: center;
+    width: 97%;
+    margin-top: 5px;
+}
+
+#directoryButton img {
+    padding: 0px 10px;
+}
+
+#gridToggle {
+    border-right: 2px dotted gray;
+    
+}
+
+#businessDirectory {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 97%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 0.2;
+}
+

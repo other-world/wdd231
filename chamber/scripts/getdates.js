@@ -13,4 +13,4 @@ const place = "Utah, USA";
 document.querySelector('#copywrite').innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
 document.querySelector('#lastModified').innerHTML = `Last Modified ${lastModified}`;
 
-$("a[href*='" + location.pathname + "']").addClass("current");
+//$("a[href*='" + location.pathname + "']").addClass("current");

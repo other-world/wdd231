@@ -1,0 +1,23 @@
+/* CSS for Prophets Page */
+
+h1, h2, img {
+    display: flex;
+    justify-content: center;
+}
+
+.individualProphet {
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    margin: 5px auto;
+    max-width: 250px;
+}
+
+p {
+    text-align: center;
+    line-height: 0.2;
+}
+
+img {
+    margin: auto;
+}
