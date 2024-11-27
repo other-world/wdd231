@@ -20,7 +20,7 @@ button {
     margin: 5px;
 }
 
-h3 {
+h2 {
     margin-bottom: 5px;
     font-size: 3vw;
 }
@@ -51,7 +51,7 @@ h3 {
     justify-content: space-evenly;
     border-radius: 0px;
     box-shadow: none; 
-    text-align: left;
+    justify-self: left;
 
 }
 
@@ -84,8 +84,7 @@ h3 {
     grid-column-start: 2;
     grid-row-start: 1;
     align-items: end;
-/*     border: 2px solid orange;
- */    line-height: normal;
+    line-height: normal;
     word-wrap: break-word;
 }
 

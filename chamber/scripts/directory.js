@@ -68,7 +68,7 @@ const displayBusinesses = (businessList) => {
     addContainer.setAttribute('class', 'individualBusiness');
     businesses.appendChild(addContainer);
 
-    let addName = document.createElement("h3");
+    let addName = document.createElement("h2");
     addName.setAttribute('class', 'businessName');
     addName.innerHTML = businessName;
     addContainer.appendChild(addName);

@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-    color: var(--secondary-color);
+    color: var(--secondary-color-primary);
     font-family: var(--heading-font);
 }
 
@@ -89,7 +89,7 @@ section, topbar {
     margin: 5px;
     box-shadow: 0 0 10px gray;
 }
-section h3 {
+section h2 {
     background-color:var(--accent1-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

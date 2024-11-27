@@ -9,6 +9,14 @@
     <meta name="description" content="A buusiness directory page for the WDD231 Chamber of Commerce project">
     <meta name="author" content="Jamie Cummings">
 
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Provo Utah Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Information on businesses in Provo Utah">
+    <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/provo-city-logo.webp">
+    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
     <!-- Style Sheets (CSS) -->
@@ -33,15 +41,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
         rel="stylesheet">
- 
-    <!-- Social media meta tags -->
-    <meta property="og:title" content="Provo Utah Chamber of Commerce Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Information on businesses in Provo Utah">
-    <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/provo-city-logo.webp">
-    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
-    <meta name="twitter:card" content="summary_large_image">
-
 </head>
 
 <body>
@@ -51,13 +50,13 @@
             <h1>Chamber of Commerce</h1>
         </div>
 
-        <a id="menu" href="#"></a>
+        <a id="menu" href="#" aria-label="Home Page"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                <li><a href="discover.html" aria-label="Discover">Discover</a></li>
+                <li><a href="directory.html" class="active" aria-label="Directory">Directory</a></li>
+                <li><a href="join.html" aria-label="Join">Join</a></li>
             </ul>
         </nav>
     </header>

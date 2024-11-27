@@ -1,13 +1,13 @@
 {
-    "businesses": [ 
+    "businesses": [
         {
             "businessName": "Nuskin",
             "address": [
                 {
-                    "street" : "75 W Center St",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84601
+                    "street": "75 W Center St",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84601
                 }
             ],
             "phoneNumber": "(801) 345-1000",
@@ -19,10 +19,10 @@
             "businessName": "Bluehost",
             "address": [
                 {
-                    "street" : "1958 950 E",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84606
+                    "street": "1958 950 E",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84606
                 }
             ],
             "phoneNumber": "(888) 401-4678",
@@ -34,77 +34,76 @@
             "businessName": "Brigham Young University",
             "address": [
                 {
-                    "street" : "Brigham Young University",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84602
+                    "street": "Brigham Young University",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84602
                 }
             ],
             "phoneNumber": "(801) 422-4636",
             "websiteURL": "https://www.byu.edu/",
-            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Brigham_Young_University_medallion.svg/1200px-Brigham_Young_University_medallion.svg.png",
+            "icon": "./images/Brigham_Young_University_medallion.webp",
             "membershipLevel": "1"
         },
         {
             "businessName": "Angel Studios",
             "address": [
                 {
-                    "street" : "295 W Center St, Unit A",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84601
+                    "street": "295 W Center St, Unit A",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84601
                 }
             ],
             "phoneNumber": "(571) 278-4380",
             "websiteURL": "https://www.angel.com/",
-            "icon": "https://images.angelstudios.com/image/upload/v1692224916/Angel-Studios-Logo-copper.webp",
+            "icon": "./images/Angel-Studios-Logo-copper.webp",
             "membershipLevel": "3"
         },
         {
             "businessName": "Qualitrics",
             "address": [
                 {
-                    "street" : "333 W River Park Dr,",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84604
+                    "street": "333 W River Park Dr,",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84604
                 }
             ],
             "phoneNumber": "1+ (800) 339-8865",
             "websiteURL": "https://www.qualtrics.com/",
-            "icon": "https://www.qualtrics.com/m/assets/wp-content/uploads/2024/03/Asset-1@2x.png",
+            "icon": "./images/qualtrics-logo.webp",
             "membershipLevel": "2"
         },
         {
             "businessName": "Eye Clinic & Aesthetics of Provo",
             "address": [
                 {
-                    "street" : "2230 North University Parkway",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84604
+                    "street": "2230 North University Parkway",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84604
                 }
             ],
             "phoneNumber": "(801) 373-4550",
             "websiteURL": "https://provoeyeclinic.com/",
-            "icon": "https://provoeyeclinic.com/wp-content/uploads/2024/05/Eye-Clinic-Aesthetics-of-Provo-Logo-Horizontal-e1715720423494.png",
+            "icon": "./images/Eye-Clinic-Aesthetics-of-Provo-Logo.webp",
             "membershipLevel": "1"
         },
         {
             "businessName": "180 Tacos",
             "address": [
                 {
-                    "street" : "3368 N University Ave",
-                    "city" : "Provo",
-                    "state" : "Utah",
-                    "zipcode" : 84604
+                    "street": "3368 N University Ave",
+                    "city": "Provo",
+                    "state": "Utah",
+                    "zipcode": 84604
                 }
             ],
             "phoneNumber": "(801) 356-8226",
             "websiteURL": "https://180tacos.com/",
-            "icon": "https://static.wixstatic.com/media/5686a6_05a7b2c021114f118372ac2505ea3fa7~mv2.png/v1/fill/w_850,h_254,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/180%2520tacos%2520logo%2520long%2520white%2520bckg.png",
+            "icon": "./images/180tacos-logo.webp",
             "membershipLevel": "3"
         }
     ]
 }
-
