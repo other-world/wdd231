@@ -58,7 +58,7 @@
     }
 
     footer p {
-        font-size: small;
+        justify-content: start;
     }
 
 
