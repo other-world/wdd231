@@ -8,35 +8,34 @@
     <meta name="Provo Chamber of Commerce Directory" content="Provo local businesses">
 
     <meta name="author" content="Jamie Cummings">
-     <!-- Style Sheets (CSS) -->
-     <link rel="stylesheet" href="./styles/base.css">
-     <link rel="stylesheet" href="./styles/layout.css">
-     <link rel="stylesheet" href="./styles/layout-large.css">
-     <link rel="stylesheet" href="./styles/directory.css">
-
+    <!-- Style Sheets (CSS) -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/layout-large.css">
+    <link rel="stylesheet" href="./styles/directory.css">
  
-     <!-- Supporting Javascript -->
-     <script src="./scripts/getdates.js" defer></script>
-     <!--script src="./scripts/menu.js" defer></script>
-     <script src="./scripts/courses.js" defer></script-->
+    <!-- Supporting Javascript -->
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/directory.js" defer></script>
 
  
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-     <link
-         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
-         rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
  
-     <!-- Social media meta tags -->
-     <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
-     <meta property="og:type" content="website" />
-     <meta property="og:description" content="Information on businesses in Fieldtown">
-     <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
-     <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
-     <meta name="twitter:card" content="summary_large_image">
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Information on businesses in Fieldtown">
+    <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
+    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="summary_large_image">
 
 </head>
 
@@ -59,15 +58,13 @@
     </header>
 
     <main id="main-grid">
-        <!-- div class="hero">
-            <img src="./images/provoHero.webp" alt="View of Mount Timpanogos from Provo, Utah">
-        </div -->
+
         <div id="directoryButton">
-            <img src="./images/gridIcon.png" width="30px" height="30px" alt="grid icon" id="gridToggle">
-            <img src="./images/listIcon.png" width="30px" height="30px" alt="list icon" id="listToggle">
+            <button><img src="./images/gridIcon.png" width="30px" height="30px" alt="grid icon" id="gridToggle"></button>
+            <button><img src="./images/listIcon.png" width="30px" height="30px" alt="list icon" id="listToggle"></button>
         </div>
 
-        <div id="businessDirectory">
+        <div id="businessDirectory" class="grid">
         </div>   
     </main>
 

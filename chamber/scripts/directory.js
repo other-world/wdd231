@@ -1,15 +1,27 @@
 const businessFile = "./data/members.json";
 const businesses = document.querySelector('businesses');
 
-const businessDisplay = document.querySelector('#businessDisplay');
-const mainNav = document.querySelector('#animatedMenu');
-//const mainNav = document.querySelector('.navigation');
+// Setup for grid vs list view
+const gridButton = document.querySelector('#gridToggle');
+const listButton = document.querySelector('#listToggle');
+let businessDirectory = document.querySelector('#businessDirectory');
+//console.log("variable = " + businessDirectory);
+let listType = 'grid';
 
-/*hamButton.addEventListener('click', () => {
-	mainNav.classList.toggle('grid2list');
-	businessDisplay.classList.toggle('grid2list');
-	toggleMenuButton();
-});*/
+gridButton.addEventListener('click', () => {
+  listType = 'grid';
+  businessDirectory.setAttribute('class', listType);
+  //console.log(businessDirectory);
+});
+
+listButton.addEventListener('click', () => {
+  listType = 'list';
+  businessDirectory.setAttribute('class', listType);
+
+  //console.log(businessDirectory);
+});
+
+const businessDisplay = document.querySelector('#businessDisplay');
 
 getBusinessData();
 
@@ -33,9 +45,11 @@ async function getBusinessData() {
 }
 
 const displayBusinesses = (businessList) => {
+  let display = listType;
+  console.log(display);
   let businesses = document.getElementById("businessDirectory");
   businessList.innerHTML = "";
-
+  
   businessList.forEach(element => {
     let businessName = element.businessName;
     let address = element.address;
@@ -43,94 +57,57 @@ const displayBusinesses = (businessList) => {
       let city = address[0].city;
       let state = address[0].state;
       let zipcode = address[0].zipcode;
-      let fullAddress = street + " " + city + ", " + state + " " + zipcode;    
+      let region = city + ", " + state + " " + zipcode;    
     let phone = element.phoneNumber;
     let website = element.websiteURL;
     let iconURL = element.icon;
     let iconAltText = "Icon for " + businessName;
     let membershipLevel = element.membershipLevel;
 
-
     let addContainer = document.createElement("section");
     addContainer.setAttribute('class', 'individualBusiness');
     businesses.appendChild(addContainer);
 
-    let addIcon = document.createElement("img");
-        addIcon.setAttribute('src', iconURL);
-        addIcon.setAttribute('alt', iconAltText);
-        addIcon.setAttribute('loading', 'lazy');
-        addIcon.setAttribute('width', '150px');
-        addIcon.setAttribute('height', 'auto');
-        // Icon should be hiddden in list view
-        // addIcon.setAttribute('hidden');
-        addContainer.appendChild(addIcon);
-        
-    
-    let addName = document.createElement("p");
-    addName.setAttribute('class', businessName);
+    let addName = document.createElement("h3");
+    addName.setAttribute('class', 'businessName');
     addName.innerHTML = businessName;
     addContainer.appendChild(addName);
 
+    let addIcon = document.createElement("img");
+    addIcon.setAttribute('class', 'businessIcon');
+    addIcon.setAttribute('src', iconURL);
+    addIcon.setAttribute('alt', iconAltText);
+    addIcon.setAttribute('loading', 'lazy');
+    addIcon.setAttribute('width', '150px');
+    addIcon.setAttribute('height', 'auto');
+    // Icon should be hiddden in list view
+    // addIcon.setAttribute('hidden');
+    addContainer.appendChild(addIcon);
+
+    let addStreet = document.createElement("p");
+    addStreet.setAttribute('class', 'street');
+    addStreet.innerHTML = street;
+    addContainer.appendChild(addStreet);
+
     let addAddress = document.createElement("p");
-    addAddress.setAttribute('class', fullAddress);
-    addAddress.innerHTML = fullAddress;
+    addAddress.setAttribute('class', 'region');
+    addAddress.innerHTML = region;
     addContainer.appendChild(addAddress);
 
     let addPhone = document.createElement("p");
-    addPhone.setAttribute('class', phone);
+    addPhone.setAttribute('class', 'phone');
     addPhone.innerHTML = phone;
     addContainer.appendChild(addPhone);
 
     let addWebsite = document.createElement("a");
-    addWebsite.setAttribute('class', website);
+    addWebsite.setAttribute('class', 'website');
     addWebsite.setAttribute('href', website);
     addWebsite.innerHTML = website;
     addContainer.appendChild(addWebsite);
     
   });
+
+  document.querySelector
   
 }
-/*
 
-const displayProphets = (prophetsList) => {
-    let prophets = document.getElementById("cards");
-    prophets.innerHTML = "";
-
-    prophetsList.forEach(element => {
-        let fullName = element.name + " " + element.lastname;
-        let dob = "Date of Birth: " + element.birthdate;
-        let pob = "Place of Birth: " + element.birthplace;
-        let imgURL = element.imageurl;
-        let imgalt = fullName + "'s portrait"
-
-        let addContainer = document.createElement("section");
-        addContainer.setAttribute('class', 'individualProphet');
-        prophets.appendChild(addContainer);
-        
-
-        let addName = document.createElement("h2");
-        addName.setAttribute('class', fullName);
-        addName.innerHTML = fullName;
-        addContainer.appendChild(addName);
-
-        let addDOB = document.createElement("p");
-        addDOB.setAttribute('class', dob);
-        addDOB.innerHTML = dob;
-        addContainer.appendChild(addDOB);
-
-        let addPOB = document.createElement("p");
-        addPOB.setAttribute('class', pob);
-        addPOB.innerHTML = pob;
-        addContainer.appendChild(addPOB);
-
-        let addPortrait = document.createElement("img");
-        addPortrait.setAttribute('class', 'portrait');
-        addPortrait.setAttribute('src', imgURL);
-        addPortrait.setAttribute('alt', imgalt);
-        addPortrait.setAttribute('loading', 'lazy');
-        addPortrait.setAttribute('width', '200px');
-        addPortrait.setAttribute('height', '247px');
-        addContainer.appendChild(addPortrait);
-        
-        //console.log(addPortrait);
-    })*/
