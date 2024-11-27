@@ -12,7 +12,7 @@
             ],
             "phoneNumber": "(801) 345-1000",
             "websiteURL": "https://www.nuskin.com/",
-            "icon": "https://www.nuskin.com/content/dam/brandidentity/images/logos/nuskin-wordmark-fountain.png",
+            "icon": "./images/nuskin-wordmark-fountain-logo.webp",
             "membershipLevel": "1"
         },
         {
@@ -27,7 +27,7 @@
             ],
             "phoneNumber": "(888) 401-4678",
             "websiteURL": "https://bluehost.com/",
-            "icon": "https://www.bluehost.com/blog/wp-content/smush-webp/2017/07/logo5-1.png.webp",
+            "icon": "./images/bluehost-logo.webp",
             "membershipLevel": "3"
         },
         {
