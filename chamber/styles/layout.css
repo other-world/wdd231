@@ -78,3 +78,17 @@ nav .active {
     text-decoration: none;
     text-align: center;
 }
+
+footer div {
+    padding: 5px 15px;;
+}
+
+footer {
+    grid-template-columns: 1fr;
+}
+
+footer p {
+    margin-top: 10px;
+    justify-items: left;
+    justify-content: start;
+}

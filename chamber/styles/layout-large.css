@@ -53,4 +53,14 @@
         grid-template-columns: repeat(3, 150px);
     }
 
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+
+    footer p {
+        font-size: small;
+    }
+
+
+
 }
