@@ -1,8 +1,10 @@
-@media screen and (min-width: 1000px) {
-    #businessDirectory {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 900px;
+@media screen and (min-width: 650px) {
+
+    h3 {
+        font-size: larger;
     }
 
+    a, p {
+        font-size: large;
+    }
 }

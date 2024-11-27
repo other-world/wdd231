@@ -79,7 +79,7 @@
             "businessName": "Eye Clinic & Aesthetics of Provo",
             "address": [
                 {
-                    "street" : "2230 North University Parkway , Suite #10A",
+                    "street" : "2230 North University Parkway",
                     "city" : "Provo",
                     "state" : "Utah",
                     "zipcode" : 84604
@@ -94,7 +94,7 @@
             "businessName": "180 Tacos",
             "address": [
                 {
-                    "street" : "3368 n university avenue",
+                    "street" : "3368 N University Ave",
                     "city" : "Provo",
                     "state" : "Utah",
                     "zipcode" : 84604

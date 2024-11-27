@@ -21,8 +21,8 @@ button {
 }
 
 h3 {
-    font-style: bold;
     margin-bottom: 5px;
+    font-size: 3vw;
 }
 
 #businessDirectory {
@@ -44,11 +44,11 @@ h3 {
 
 .list section {
     display: grid;
-    grid-template-columns: 1.5fr 2px 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: stretch;
-    align-items: stretch;
-    border: 1px solid orange;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5px;
+/*     grid-template-columns: .75fr 0px 1fr .5fr 1fr 1fr auto;
+ */    grid-template-rows: 2fr;
+    justify-content: space-evenly;
     border-radius: 0px;
     box-shadow: none; 
     text-align: left;
@@ -62,57 +62,73 @@ h3 {
 .list .businessName {
     display: block;
     grid-column-start: 1;
+    grid-row: 1 / 3;
     font-style: normal;
     margin: 0px;
+    margin-right: 15px;
     background-color: inherit;
     text-align: left;
-    border: 2px solid orange;
-}
+    border-right: 1px solid #e4cc7a;
+    border-radius: 0px;
+/*     border: 2px solid orange;
+ */}
 
 .list .businessIcon {
     display: none;
-     border: 2px solid orange;
-    grid-column-start: 2;
+/*     border: 2px solid orange;
+ */    grid-column-start: 1;
 }
 
 .list .street {
     display: block;
-    grid-column-start: 3;
-     border: 2px solid orange;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-items: end;
+/*     border: 2px solid orange;
+ */    line-height: normal;
+    word-wrap: break-word;
 }
 
 .list .region {
     display: block;
-    grid-column-start: 4;
-     border: 2px solid orange;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-items: start;
+/*      border: 2px solid orange;
+ */     line-height: normal;
 }
 
 .list .phone {
     display: block;
-    grid-column-start: 5;
-    border: 2px solid orange;
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+/*     border: 2px solid orange;
+ */    line-height: normal;
  }
 
 .list .website {
     display: block;
-    grid-column-start: 6;
-    margin: 0px;
-    border: 2px solid orange;
+    grid-column-start: 3;
+    grid-row-start: 2;
+/*     border: 2px solid orange;
+ */    line-height: normal;
  }
 
 .list a, list p {
-    display: block;
-    margin: 0px;
-    word-wrap: break-word;
-    line-height: 0;
+    padding-top: 15px;
+    overflow: hidden;
 }
 
 a, p {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 15px;
-    overflow-wrap: break-word;
     line-height: 0.3;
+    font-size: 3vw;
+}
+
+.grid p {
 }
 
 
@@ -129,14 +145,6 @@ a, p {
     justify-content: center;
     height: 300px;
 } 
-
-a, p {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    overflow-wrap: break-word;
-    line-height: 0.3;
-}
 
 .businessIcon{
     display: block;

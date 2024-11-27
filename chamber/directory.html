@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Provo Chamber of Commerce Directory</title>
     <meta name="Provo Chamber of Commerce Directory" content="Provo local businesses">
-
     <meta name="author" content="Jamie Cummings">
+
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
     <!-- Style Sheets (CSS) -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
     <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/directory-large.css">
+
  
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
@@ -31,7 +35,7 @@
  
     <!-- Social media meta tags -->
     <meta property="og:title" content="Fieldtown Chamber of Commerce Directory">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:description" content="Information on businesses in Fieldtown">
     <meta property="og:image" content="https://other-world.github.io/wdd231/chamber/images/elko-nevada-temple.jpg">
     <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/directory.html">
@@ -60,8 +64,8 @@
     <main id="main-grid">
 
         <div id="directoryButton">
-            <button title="grid view"><img src="./images/gridIcon.png" width="30px" height="30px" alt="grid icon" id="gridToggle"></button>
-            <button title="list view"><img src="./images/listIcon.png" width="30px" height="30px" alt="list icon" id="listToggle"></button>
+            <button title="grid view"><img src="./images/gridIcon.png" width="30" height="30" alt="grid icon" id="gridToggle"></button>
+            <button title="list view"><img src="./images/listIcon.png" width="30" height="30" alt="list icon" id="listToggle"></button>
         </div>
 
         <div id="businessDirectory" class="grid">
@@ -69,8 +73,22 @@
     </main>
 
     <footer>
-        <p id="copywrite"></p>
-        <p id="lastModified"></p>
+        <div id="chamberInfo">
+            <p>Provo Chamber of Commerce</p>
+            <p>2696 N University Ave Suite 220</p>
+            <p>Provo, UT 84604</p>
+            <p>info@provo.gov</p>
+            <p>(385) 482-2555</p>
+        </div>
+        <div id="socialMedia">
+
+        </div>
+        <div id="personalInfo">
+            <p>WDD231 Class Project</p>
+            <p>Jamie Cummings</p>
+            <p id="copywrite"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 

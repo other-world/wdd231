@@ -32,7 +32,6 @@ footer {
     width: 100%;
     font-family: var(--paragraph-font);
     font-weight: 400;
-    /*border: 5px solid green;*/
     background-color: white;
 }
 
@@ -138,6 +137,8 @@ li {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 10px;
     text-align: center;
 }
