@@ -107,7 +107,7 @@ const displayBusinesses = (businessList) => {
     
   });
 
-  document.querySelector
+  //document.querySelector
   
 }
 
