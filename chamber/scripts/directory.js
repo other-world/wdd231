@@ -73,6 +73,9 @@ const displayBusinesses = (businessList) => {
     addName.innerHTML = businessName;
     addContainer.appendChild(addName);
 
+
+
+
     let addIcon = document.createElement("img");
     addIcon.setAttribute('class', 'businessIcon');
     addIcon.setAttribute('src', iconURL);
