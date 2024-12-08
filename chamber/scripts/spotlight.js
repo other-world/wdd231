@@ -36,10 +36,10 @@ async function getBusinessData() {
             }
         }
         //console.dir(topTier);
-        
+
         // Randomize
         let randomNumberArray = new Array();
-        for (let i = 0; i <= 2; i++) {
+        while (randomNumberArray.length < 3) {
             let randomNumber = Math.floor(Math.random() * topTier.length);
             if (randomNumberArray.includes(randomNumber) == false) {
                 randomNumberArray.push(randomNumber);
@@ -139,7 +139,7 @@ const displayBusinesses = (businessList) => {
 
         let addLevel = document.createElement("p");
         addLevel.setAttribute('class', 'membershipLevel');
-        if (membershipLevel == 1){
+        if (membershipLevel == 1) {
             addLevel.innerHTML = "Gold Level Membership";
         }
         else {
