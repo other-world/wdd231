@@ -49,7 +49,7 @@ async function getWeather(weatherURL) {
             const weatherData = await response.json();
             //console.log(weatherData);
 
-            temperature = weatherData.main.temp + "°F";
+            temperature = ` ${weatherData.main.temp} °F`;
             description = weatherData.weather[0].description;
             icon = iconURL + weatherData.weather[0].icon + "@2x.png";
 

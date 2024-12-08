@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
+    <link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/directory-large.css">
+
 
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/spotlight.js" defer></script>
 
 
     <!-- Google Fonts -->
@@ -65,12 +69,17 @@
             </ul>
         </nav>
     </header>
-
+    
     <main id="main-grid">
         <div class="hero">
             <img src="./images/provoHero.webp" alt="View of Mount Timpanogos from Provo, Utah">
+            <!-- Image taken by Jamie Cummings, all rights reserved -->
+            <div id="action">
+                <a href=join.html><h2>Join Now</h2></a>
+            </div>
         </div>
-        <div id="mainInfo">
+
+        <div id="mainInfo" class="grid">
             <section class="indexMain">
                 <h3>Events</h3>
                 <!-- Auto generate with Javascript? -->
@@ -90,7 +99,7 @@
             </section>
             <section class="indexMain">
                 <h3>Currrent Weather</h3>
-                <p>The current temperature in Provo, Utah is <span id="current-temp"></span></p>
+                <p>Temperature: <span id="current-temp"></span></p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption></figcaption>
@@ -106,22 +115,32 @@
         </div>
 
         <div id="featuredBusinesses" class="grid">
-            <section class="individualBusiness">
-                <img src="./images/goldMember.webp" alt="Gold Level Membership" width="150" height="147">
-            </section>
-            <section class="individualBusiness">
-                <img src="./images/silverMember.webp" alt="Silver Level Membership" width="150" height="147">
-            </section>
-            <section class="individualBusiness">
-                <img src="./images/copperMember.webp" alt="Copper Level Membership" width="150" height="147">
-            </section>
         </div>
 
     </main>
 
     <footer>
-        <p id="copywrite"></p>
-        <p id="lastModified"></p>
+        <div id="chamberInfo">
+            <p>Provo Chamber of Commerce</p>
+            <p>2696 N University Ave Suite 220</p>
+            <p>Provo, UT 84604</p>
+            <p>info@provo.gov</p>
+            <p>(385) 482-2555</p>
+        </div>
+        <div id="socialMedia">
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook link"
+                    width="30" height="30"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram link"
+                    width="30" height="30"></a>
+            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube link" width="30"
+                    height="30"></a>
+        </div>
+        <div id="personalInfo">
+            <p>WDD231 Class Project</p>
+            <p>Jamie Cummings</p>
+            <p id="copywrite"></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
