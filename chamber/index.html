@@ -8,6 +8,8 @@
     <meta name="description" content="Project page for WDD 231, Also known as the Provo, Utah Chamber of Commerce">
     <meta name="author" content="Jamie Cummings">
 
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
     <!-- Style Sheets (CSS) -->
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
@@ -16,11 +18,15 @@
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
-    <script src="./scripts/courses.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
@@ -46,7 +52,7 @@
     <header>
         <div id="topbar">
             <img src="./images/provo-city-logo.webp" alt="City of Provo Logo - Welcome Home" width="200" height="86">
-            <h1>Chamber of Commerce</h1>
+            <h1 style="font-family: Allura;">Chamber of Commerce</h1>
         </div>
 
         <a id="menu" href="#"></a>
@@ -64,41 +70,52 @@
         <div class="hero">
             <img src="./images/provoHero.webp" alt="View of Mount Timpanogos from Provo, Utah">
         </div>
-        <section class="indexMain">
-            <h3>Events</h3>
-            <!-- Auto generate with Javascript? -->
-            <!--Place holders for now-->
-            <h4>Business After Hours</h4>
-            <p>29 Nov - The Shops At RiverWoods</p>
+        <div id="mainInfo">
+            <section class="indexMain">
+                <h3>Events</h3>
+                <!-- Auto generate with Javascript? -->
+                <!--Place holders for now-->
+                <h4>Business After Hours</h4>
+                <p>29 Nov - The Shops At RiverWoods</p>
 
-            <h4>Business After Hours</h4>
-            <p>29 Nov - The Shops At RiverWoods</p>
+                <h4>Business After Hours</h4>
+                <p>29 Nov - The Shops At RiverWoods</p>
 
-            <h4>Center Street Dinning Resources</h4>
-            <p>12 Dec 2024 - Convertion Center</p>
+                <h4>Center Street Dinning Resources</h4>
+                <p>12 Dec 2024 - Convertion Center</p>
 
-            <h4>Entrepreneur Opportunities</h4>
-            <p>14 Dec 2024 - Convention Center</p>
+                <h4>Entrepreneur Opportunities</h4>
+                <p>14 Dec 2024 - Convention Center</p>
 
-        </section>
-        <section class="indexMain">
-            <h3>Current Weather</h3>
+            </section>
+            <section class="indexMain">
+                <h3>Currrent Weather</h3>
+                <p>The current temperature in Provo, Utah is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
 
-        </section>
-        <section class="indexMain">
-            <h3>Weather Forecast</h3>
+            </section>
+            <section class="indexMain">
+                <h3>Weather Forecast</h3>
+                <p id="dayOne">Today:</p><span id="dayOneWeather"></span>
+                <p id="dayTwo">Tomorrow:</p><span id="dayTwoWeather"></span>
+                <p id="dayThree">The Next Day:</p><span id="dayThreeWeather"></span>
+            </section>
+        </div>
 
-        </section>
-
-        <section class="buisnessCard">
-
-        </section>
-        <section class="buisnessCard">
-
-        </section>
-        <section class="buisnessCard">
-
-        </section>
+        <div id="featuredBusinesses" class="grid">
+            <section class="individualBusiness">
+                <img src="./images/goldMember.webp" alt="Gold Level Membership" width="150" height="147">
+            </section>
+            <section class="individualBusiness">
+                <img src="./images/silverMember.webp" alt="Silver Level Membership" width="150" height="147">
+            </section>
+            <section class="individualBusiness">
+                <img src="./images/copperMember.webp" alt="Copper Level Membership" width="150" height="147">
+            </section>
+        </div>
 
     </main>
 

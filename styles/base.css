@@ -35,8 +35,8 @@ header,
 footer {
     background-color: var(--accent1-color);
     min-height: max-content;
-    min-width: 320px;
-}
+/*     min-width: 320px;
+ */}
 
 /* topbar does not include navigation */
 #topbar {

@@ -21,7 +21,7 @@
 
     nav {
         background-color: var(--nav-bg-color);
-        font-family: var(--heading-font);
+        font-family: var(--nav-font);
         padding: 10px;
         display: flex;
         justify-content: space-evenly;

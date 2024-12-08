@@ -4,7 +4,8 @@
     --secondary-color: white;
     --accent1-color: #e4cc7a;
 
-    --heading-font: 'Roboto', sans-serif;
+    --heading-font: 'Allura', sans-serif;
+    --nav-font: 'Roboto', sans-serif;
     --paragraph-font: 'Gupter', serif;
     --font-color-primary: #545255;
     --font-color-secondary: white;
@@ -74,7 +75,7 @@ h1 {
 
 h2 {
     color: var(--secondary-color-primary);
-    font-family: var(--heading-font);
+    font-family: var(--nav-font);
 }
 
 h3 {
@@ -89,6 +90,7 @@ section, topbar {
     margin: 5px;
     box-shadow: 0 0 10px gray;
 }
+
 section h2 {
     background-color:var(--accent1-color);
     border-top-left-radius: 5px;

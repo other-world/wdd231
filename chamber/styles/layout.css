@@ -14,7 +14,7 @@
 }
 
 #menu.show::before {
-    font-family: var(--heading-font);
+    font-family: var(--nav-font);
     content: "x";
 }
 
