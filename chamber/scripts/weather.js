@@ -58,7 +58,7 @@ async function getWeather(weatherURL) {
             currentTemp.innerHTML = temperature;
 
             weatherIcon.setAttribute("src", icon);
-            weatherIcon.setAttribute("alt", description);
+            //weatherIcon.setAttribute("alt", description);
             caption.innerHTML = description;
 
 

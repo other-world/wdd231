@@ -35,7 +35,7 @@ async function getBusinessData() {
 
             }
         }
-        console.dir(topTier);
+        //console.dir(topTier);
         
         // Randomize
         let randomNumberArray = new Array();
@@ -46,8 +46,8 @@ async function getBusinessData() {
                 randomTopTier.push(topTier[randomNumber]);
             }
         }
-        console.log(randomNumberArray);
-        console.log(randomTopTier);
+        //console.log(randomNumberArray);
+        //console.log(randomTopTier);
 
 
 
