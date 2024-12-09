@@ -1,6 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const caption = document.querySelector('figcaption');
 
 const lat = "40.23394701948456";
 const lon = "-111.65846362075166";
@@ -57,9 +56,17 @@ async function getWeather(weatherURL) {
 
             currentTemp.innerHTML = temperature;
 
-            weatherIcon.setAttribute("src", icon);
-            //weatherIcon.setAttribute("alt", description);
-            caption.innerHTML = description;
+            const weatherImage = document.querySelector(".weatherIcon");
+            //weatherImage.innerHTML = "";
+            let addIcon = document.createElement("img");
+            addIcon.setAttribute("src", icon);
+            addIcon.setAttribute("alt", description);
+            weatherImage.appendChild(addIcon);
+
+            let weatherCaption = document.createElement("figcaption");
+            weatherCaption.innerHTML = description;
+            weatherImage.appendChild(weatherCaption);
+
 
 
         }
