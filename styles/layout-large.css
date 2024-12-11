@@ -1,18 +1,19 @@
 @media screen and (min-width: 650px) {
     #menu {
-		display: none; /* hide hamburger button */
-	}
+        display: none;
+        /* hide hamburger button */
+    }
 
     nav {
         display: flex;
         justify-content: space-between;
-    } 
+    }
 
     nav ul {
-    display: inline-flex;
-    margin: auto;
-    justify-content: space-evenly;
-    width: 100%;
+        display: inline-flex;
+        margin: auto;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     .navigation li {
@@ -43,7 +44,12 @@
         grid-template-rows: auto auto;
         grid-template-columns: 2fr 1fr;
     }
-    
+
+    #joinChamber {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
     h1 {
         font-size: xx-large;
     }

@@ -4,6 +4,11 @@ main {
     grid-template-columns: 1fr;
 }
 
+#joinChamber {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -26,7 +31,7 @@ main {
 }
 
 nav {
-	background-color: black;
+    background-color: black;
 }
 
 nav ul {
@@ -48,35 +53,36 @@ nav a:link {
 }
 
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation a {
-	display: inline-flex;
+    display: inline-flex;
     vertical-align: middle;
     padding: 10px 5px;
-	text-align: center;
-	text-decoration: none;
-	font-weight: 700;
-	transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
     color: white;
     width: 85%;
 }
 
 .navigation li {
-	display: none;
+    display: none;
 }
 
 .show li {
-	display: flex;
+    display: flex;
     transition: display;
 }
 
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: rgb(76, 74, 74);
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: rgb(76, 74, 74);
 }
 
 nav .active {
@@ -86,7 +92,7 @@ nav .active {
 }
 
 #coursework {
-     max-width: 0;
+    max-width: 0;
 }
 
 .course-credits {

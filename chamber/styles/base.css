@@ -131,11 +131,6 @@ section h2 {
     border-top-right-radius: 5px;
 }
 
-#joinChamber {
-    display: grid;
-    grid-template-columns: 2fr 1fr;;
-}
-
 input, textarea {
     border: 2px solid #666;
 }
@@ -155,24 +150,61 @@ input, textarea {
 }
 
 .memberBoxes {
-    border: 1px solid #666;
+    border: 5px solid #666;
     margin: 1rem;
 }
 
+@keyframes np {
+    from {border-color: #666;}
+    to {border-color: turquoise;}
+}
+
 div #NPMembership {
-    background-color:azure;
+    animation-name: np;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bronze {
+    from {border-color: #666;}
+    to {border-color: #ce8946}
 }
 
 div #BronzeMembership {
-    background-color: #ce8946;
+    animation-name: bronze;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
 }
 
-div #Silverembership {
-    background-color:silver;
+@keyframes silver {
+    from {border-color: #666;}
+    to {border-color: rgb(216, 216, 216)}
+}
+
+div #SilverMembership {
+    animation-name: silver;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gold {
+    from {border-color: #666;}
+    to {border-color: gold}
 }
 
 div #GoldMembership {
-    background-color:gold;
+    animation-name: gold;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 figure {

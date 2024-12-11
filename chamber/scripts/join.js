@@ -15,6 +15,8 @@ displayMembershipLevels(memberships);
 
 
 function displayMembershipLevels(data) {
+    console.log("Entering displayMembershipLevels:");
+    console.log(data);
     data.forEach(element => {
         console.log(element);
         const membershipBox = document.createElement("div");
