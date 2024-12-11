@@ -79,6 +79,11 @@ nav .active {
     text-align: center;
 }
 
+#joinChamber {
+    display: grid;
+    grid-template-columns:1fr;
+}
+
 footer div {
     padding: 15px 15px;;
 }

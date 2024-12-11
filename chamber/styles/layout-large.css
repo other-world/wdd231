@@ -34,6 +34,11 @@
         text-decoration: none;
     }
 
+    #joinChamber {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
     .hero {
         grid-column: 1 / 4;
     }
