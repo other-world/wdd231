@@ -88,24 +88,19 @@
         </label>
 
         <p>Mempership Level:<br>
-            <label for="NP">NP (Non-Profit)<br>
-                <input type="radio" name="membership" id="NP" value="NP">
-            </label>
-            <label for="bronze">Bronze<br>
-                <input type="radio" name="membership" id="bronze" value="bronze">
-            </label>
-            <label for="silver">Silver<br>
-                <input type="radio" name="membership" id="silver" value="silver">
-            </label>
-            <label for="gold">Gold<br><br>
-                <input type="radio" name="membership" id="gold" value="gold">
-            </label>
+            <input type="radio" name="membership" id="NP" value="NP">
+            <label for="NP">NP (Non-Profit)</label><br>
+            <input type="radio" name="membership" id="bronze" value="bronze">
+            <label for="bronze">Bronze</label><br>
+            <input type="radio" name="membership" id="silver" value="silver">
+            <label for="silver">Silver</label><br>
+            <input type="radio" name="membership" id="gold" value="gold">
+            <label for="gold">Gold</label><br><br>
         </p>
 
+        <label for="bizDesc">Description:</label><br>
+        <textarea id="bizDesc" name="bizDesc" rows="10" cols="30">Tell us about your business</textarea><br><br>
 
-        <label for="bizDesc">Description:<br>
-            <textarea id="bizDesc" name="bizDesc" rows="10" cols="30">Tell us about your business</textarea><br><br>
-        </label>
         <input type="hidden" id="timestamp" name="timestamp">
         <input type="submit" value="Join Now">
     </form>
@@ -117,8 +112,6 @@
 
     </dialog>
 </section>
-
-
 
 <footer>
     <div id="chamberInfo">
@@ -143,7 +136,7 @@
         <p id="lastModified"></p>
     </div>
 </footer>
-<!--script src="scripts/join.js" type="module"></script-->
+<script src="scripts/join.js" type="module"></script>
 </body>
 
 </html>
