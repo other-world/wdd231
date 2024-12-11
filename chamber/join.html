@@ -24,20 +24,20 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/layout-large.css">
-    <link rel="stylesheet" href="./styles/directory.css">
-    <link rel="stylesheet" href="./styles/directory-large.css">
+    <!--link rel="stylesheet" href="./styles/directory.css">
+    <link rel="stylesheet" href="./styles/directory-large.css"-->
 
- 
+
     <!-- Supporting Javascript -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 
- 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Roboto:wght@100;400&display=swap"
@@ -56,12 +56,68 @@
             <ul class="navigation">
                 <li><a href="index.html" aria-label="Home Page">Home</a></li>
                 <li><a href="discover.html" aria-label="Discover">Discover</a></li>
-                <li><a href="directory.html" class="active" aria-label="Directory">Directory</a></li>
-                <li><a href="join.html" aria-label="Join">Join</a></li>
+                <li><a href="directory.html" aria-label="Directory">Directory</a></li>
+                <li><a href="join.html" class="active" aria-label="Join">Join</a></li>
             </ul>
         </nav>
     </header>
 </body>
+<section id="joinForm">
+    <h2>Membership Application</h2>
+    <form>
+        <label for="fname">First name:<br>
+            <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="John" required><br>
+        </label>
+        <label for="lname">Last name:<br>
+            <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Doe" required><br><br>
+        </label>
+        <label for="orgTitle">Applicant's Organizational Title:<br>
+            <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" minlength="7"
+                placeholder="Alpha Characters, hyphens, and spaces only."><br><br>
+        </label>
+        <label for="email">Email:<br>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jdoe234@gmail.com"
+                required><br><br>
+        </label>
+        <label for="phone">Phone Number:<br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(801) 789-1234"
+                pattern="[1]*[0-9]{3}[-]*[0-9]{3}[-]*[0-9]{4}" required><br><br>
+        </label>
+        <label for="bizName">Business/Organization Name:<br>
+            <input type="text" id="bizName" name="bizName" required><br><br>
+        </label>
+
+        <p>Mempership Level:<br>
+            <label for="NP">NP (Non-Profit)<br>
+                <input type="radio" name="membership" id="NP" value="NP">
+            </label>
+            <label for="bronze">Bronze<br>
+                <input type="radio" name="membership" id="bronze" value="bronze">
+            </label>
+            <label for="silver">Silver<br>
+                <input type="radio" name="membership" id="silver" value="silver">
+            </label>
+            <label for="gold">Gold<br><br>
+                <input type="radio" name="membership" id="gold" value="gold">
+            </label>
+        </p>
+
+
+        <label for="bizDesc">Description:<br>
+            <textarea id="bizDesc" name="bizDesc" rows="10" cols="30">Tell us about your business</textarea><br><br>
+        </label>
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="submit" value="Join Now">
+    </form>
+</section>
+
+<section id="membershipLevel">
+    <h2>Membership Levels</h2>
+    <dialog id="membershipDialog">
+
+    </dialog>
+</section>
+
 
 
 <footer>
@@ -73,9 +129,12 @@
         <p>(385) 482-2555</p>
     </div>
     <div id="socialMedia">
-            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook link" width="30" height="30"></a>
-            <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram link"  width="30" height="30"></a>
-            <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube link"  width="30" height="30"></a>
+        <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook link" width="30"
+                height="30"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram link" width="30"
+                height="30"></a>
+        <a href="https://youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube link" width="30"
+                height="30"></a>
     </div>
     <div id="personalInfo">
         <p>WDD231 Class Project</p>
@@ -84,6 +143,7 @@
         <p id="lastModified"></p>
     </div>
 </footer>
+<!--script src="scripts/join.js" type="module"></script-->
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem auto;
+    width: 95%;
+}
+
+#showHere {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+#mydialog {
+    width: 75%;
+}
+
+#mydialog button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+}
+
+#mydialog::backdrop {
+    background-color: rgba(0 0 0 / 50%);;
+}
+
+img { 
+    box-shadow: 5px 5px 5px gray;
+}
+

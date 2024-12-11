@@ -83,20 +83,18 @@ displayCourses(courses);
 displayCourseWork(courses);
 
 
-allLink=document.querySelector("#allCourses");
-cseLink=document.querySelector("#cseCourses");
-wddLink=document.querySelector("#wddCourses");
+allLink = document.querySelector("#allCourses");
+cseLink = document.querySelector("#cseCourses");
+wddLink = document.querySelector("#wddCourses");
+detailDisplay = document.querySelector(".classInfo");
+console.log(detailDisplay);
 
 allLink.addEventListener('click', () => {
-    console.clear();
-    console.log("Clicked All Button");
     displayCourses(courses);
     displayCourseWork(courses);
 })
 
-cseLink.addEventListener('click', ()  => {
-    console.clear();
-    console.log("Clicked CSE Button");
+cseLink.addEventListener('click', () => {
     let cseCourses = courses.filter(courses => courses.subject.includes("CSE"));
     displayCourses(cseCourses);
     displayCourseWork(cseCourses);
@@ -104,35 +102,38 @@ cseLink.addEventListener('click', ()  => {
 })
 
 wddLink.addEventListener('click', () => {
-    console.clear();
-    console.log("Clicked WDD Button");
     let wddCourses = courses.filter(courses => courses.subject.includes("WDD"));
     displayCourses(wddCourses);
     displayCourseWork(wddCourses);
     //console.log(wddCourses);
 })
 
+//build button event listeners in for loop
+courses.forEach(element => {
+    const 
+});
+
 // Default * Show all courses
-function displayCourses(filteredCourses){
-    console.clear();
+function displayCourses(filteredCourses) {
     //console.log(filteredCourses);
 
 
     // Get courseListResults div and clear it out
     let courseList = document.getElementById("courseListResults");
     courseList.innerHTML = "";
-    console.log(courseList);
 
     filteredCourses.forEach(element => {
-        let fullCourseName = element.subject + " " + element.number;
+        let courseName = element.subject + " " + element.number;
+        let classCourseName = element.subject + element.number + "Button";
         let finished = element.completed;
         //console.log(fullCourseName);
         //console.log(finished);
-        
+
         // build html
-        let newCourse = document.createElement("p");
-        newCourse.setAttribute('class', finished);
-        newCourse.innerHTML = fullCourseName;
+        let newCourse = document.createElement("button");
+        newCourse.setAttribute("id", classCourseName);
+        newCourse.classList.add(finished);
+        newCourse.innerHTML = courseName;
 
         courseList.appendChild(newCourse);
 
@@ -146,7 +147,7 @@ function displayCourses(filteredCourses){
 function displayCourseWork(filteredCourses) {
     console.log("Entering Course Work");
     let certificateCourseList = document.getElementById("courseWork");
-    certificateCourseList.innerHTML="";
+    certificateCourseList.innerHTML = "";
 
     let creditTotal = 0;
 
@@ -156,13 +157,13 @@ function displayCourseWork(filteredCourses) {
 
         let fullCourseName = element.subject + " " + element.number + " - " + element.title;
         let credits = element.credits;
-        
+
         let newCourse = document.createElement("div");
 
         let courseName = document.createElement("p");
-            courseName.innerText = fullCourseName;
+        courseName.innerText = fullCourseName;
         let courseCredits = document.createElement("p");
-            courseCredits.innerText = credits + " credits";
+        courseCredits.innerText = credits + " credits";
 
         newCourse.setAttribute('class', 'course-credits');
         certificateCourseList.appendChild(newCourse);
@@ -180,13 +181,18 @@ function displayCourseWork(filteredCourses) {
     certificateCourseList.appendChild(newCourse);
 
     let totalCourse = document.createElement("p");
-        totalCourse.innerText = "Total Course Credits:";
+    totalCourse.innerText = "Total Course Credits:";
     let totalCredits = document.createElement("p");
-        totalCredits.innerText = creditTotal + " credits";
+    totalCredits.innerText = creditTotal + " credits";
 
     newCourse.appendChild(totalCourse);
     newCourse.appendChild(totalCredits);
-    
+
+}
+
+// in a modal
+function displayCourseDetails() {
+
 }
 
 

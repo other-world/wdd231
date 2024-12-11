@@ -135,6 +135,7 @@ nav .active {
     background-color: rgb(210, 210, 161);
     padding: 10px 30px;
     border-radius: 5px;
+    margin: .5rem;
 }
 
 .false {
@@ -143,4 +144,5 @@ nav .active {
     background-color: rgb(227, 205, 162);
     padding: 10px 30px;
     border-radius: 5px;
+    margin: .5rem;
 }

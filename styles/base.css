@@ -18,6 +18,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-color);
     /*border: 1px solid steelblue;*/
     /* temp */
 }
@@ -77,6 +78,7 @@ h3 {
     
 }
 
+
 section {
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
@@ -100,6 +102,10 @@ figure img {
 
 }
 
+form p {
+    text-align: left;
+}
+
 figcaption {
     color: white;
     background-color: black;
@@ -114,9 +120,27 @@ p {
     padding: 0;
 }
 
-/* li {
-    list-style-position: inside;
-} */
+dialog {
+    border: 1px solie rgb(80, 80, 80);
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px gray;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px; 
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solie rgba(80, 80, 80, 0.5);
+}
 
 footer {
     margin-top: 10px;
