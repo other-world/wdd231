@@ -25,10 +25,7 @@ function displayMembershipLevels(data) {
         membershipBox.appendChild(membershipHeader);
 
         membershipLevel.appendChild(membershipBox);
-        /*templeImage.src = `${url}${element.path}`;
-        templeImage.alt = element.name;
-        templeImage.setAttribute("width", "400");
-        templeImage.setAttribute("height", "250");*/
+
 
         membershipBox.addEventListener("click", () => showInfo(element));
 

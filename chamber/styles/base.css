@@ -78,14 +78,11 @@ h1 {
     font-weight: 800;
 }
 
-h2 {
+h2, h3, h4 {
     color: var(--secondary-color-primary);
     font-family: var(--nav-font);
 }
 
-h3 {
-    color: var(--secondary-color-primary);
-}
 
 #action {
     position: absolute;
@@ -161,12 +158,22 @@ input, textarea {
     border: 1px solid #666;
     margin: 1rem;
 }
-/*
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}*/
+
+div #NPMembership {
+    background-color:azure;
+}
+
+div #BronzeMembership {
+    background-color: #ce8946;
+}
+
+div #Silverembership {
+    background-color:silver;
+}
+
+div #GoldMembership {
+    background-color:gold;
+}
 
 figure {
     position: relative;
