@@ -31,6 +31,8 @@
     <!-- Supporting Javascript -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/join.js" type="module"></script>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,11 +77,12 @@
                         required><br><br>
                 </label>
                 <label for="orgTitle">Applicant's Organizational Title:<br>
-                    <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" minlength="7" pattern="[a-zA-Z0-9\s\-]{7,}"
-                        placeholder="Alpha Characters, hyphens, and spaces only."><br><br>
+                    <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" minlength="7"
+                        pattern="[a-zA-Z0-9\s\-]{7,}" placeholder="Alpha Characters, hyphens, and spaces only."><br><br>
                 </label>
                 <label for="email">*Email:<br>
-                    <input type="email" id="email" name="email" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="jdoe234@gmail.com"
+                    <input type="email" id="email" name="email" autocomplete="email"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="jdoe234@gmail.com"
                         required><br><br>
                 </label>
                 <label for="phone">*Phone Number:<br>
@@ -144,7 +147,6 @@
             <p id="lastModified"></p>
         </div>
     </footer>
-    <script src="scripts/join.js" type="module"></script>
 </body>
 
 </html>
