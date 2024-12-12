@@ -30,7 +30,6 @@ header,
 main,
 footer {
     margin: 0 auto;
-    width: 100%;
     font-family: var(--paragraph-font);
     font-weight: 400;
     background-color: white;
@@ -40,7 +39,13 @@ header,
 footer {
     background-color: var(--secondary-color);
     min-height: max-content;
+    width: 100%;
 }
+
+main {
+    width: 98%;    
+}
+
 
 /* topbar does not include navigation */
 #topbar {
@@ -150,13 +155,16 @@ input, textarea {
 }
 
 .memberBoxes {
-    border: 5px solid #666;
-    margin: 1rem;
+    box-shadow: 0 0 10px #AAA;
+    margin: 1rem auto;
+    max-width: 300px;
+    min-height: 100px;
+    padding-top: 20px;
 }
 
 @keyframes np {
-    from {border-color: #666;}
-    to {border-color: turquoise;}
+    from {box-shadow: 0 0 10px #AAA;}
+    to {box-shadow: 0 0 10px turquoise;}
 }
 
 div #NPMembership {
@@ -168,8 +176,8 @@ div #NPMembership {
 }
 
 @keyframes bronze {
-    from {border-color: #666;}
-    to {border-color: #ce8946}
+    from {box-shadow: 0 0 10px #AAA;}
+    to {box-shadow: 0 0 10px #ce8946;}
 }
 
 div #BronzeMembership {
@@ -182,8 +190,8 @@ div #BronzeMembership {
 }
 
 @keyframes silver {
-    from {border-color: #666;}
-    to {border-color: rgb(216, 216, 216)}
+    from {box-shadow: 0 0 10px #AAA;}
+    to {box-shadow: 0 0 10px rgb(216, 216, 216);}
 }
 
 div #SilverMembership {
@@ -195,8 +203,8 @@ div #SilverMembership {
 }
 
 @keyframes gold {
-    from {border-color: #666;}
-    to {border-color: gold}
+    from {box-shadow: 0 0 10px #AAA;}
+    to {box-shadow: 0 0 10px gold;}
 }
 
 div #GoldMembership {
