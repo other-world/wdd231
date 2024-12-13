@@ -30,7 +30,7 @@
     <!-- Supporting Javascript -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/localstorage.js" defer></script>
+    <script src="scripts/lastVisited.js" defer></script>
 
 
     <!-- Google Fonts -->
@@ -62,117 +62,136 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2 id="visitorMessage"></h2>
-        <section>
-            <h2>A Rich Buisness Environment</h2>
-            <p>Utah consistently makes top rankings for business, economics and more. <a href="https://www.bankrate.com/loans/small-business/best-and-worst-states-for-small-businesses-study/" target="_blank">Bankrate.com</a> ranks Utah as the #2 state form small businesses in 2024. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vel dolores accusamus eaque laudantium,
-                nam blanditiis eveniet rem. Dolores illum doloremque et voluptas consequatur ab ea harum eligendi sit
-                aspernatur.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex amet laboriosam eius eligendi quisquam
-                repellendus dignissimos in possimus numquam voluptates consequatur dolore, consectetur cum illo earum
-                magnam quos temporibus?</p>
-        </section>
-        <section>
-            <h2>Demographics</h2>
-            <ul>
-                <li>Population: 115,162</li>
-                <li>Employed in Provo: 349,061</li>
-                <li>Businesses: 8,021</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Calendar</h2>
-            <table>
-                <caption>December 2024</caption>
-                <thead>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thur</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                        <td>31</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </thead>
-            </table>
-        </section>
-        <section id="googleMap" style="width:100%;height:400px">
-            <h2>Map</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48719.99684341424!2d-111.65555975360779!3d40.253535696586766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1734040188942!5m2!1sen!2sus"
-                width="300" height="275" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+    <div id="content">
+        <main id="discover">
+            <section>
+                <h2>A Rich Buisness Environment</h2>
+                <p>Utah consistently makes top rankings for business, economics and more. <a
+                        href="https://www.bankrate.com/loans/small-business/best-and-worst-states-for-small-businesses-study/"
+                        target="_blank">Bankrate.com</a> ranks Utah as the #2 state form small businesses in 2024. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vel dolores accusamus eaque
+                    laudantium,
+                    nam blanditiis eveniet rem. Dolores illum doloremque et voluptas consequatur ab ea harum eligendi
+                    sit
+                    aspernatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex amet laboriosam eius eligendi
+                    quisquam
+                    repellendus dignissimos in possimus numquam voluptates consequatur dolore, consectetur cum illo
+                    earum
+                    magnam quos temporibus?</p>
+            </section>
+            <section>
+                <h2>Demographics</h2>
+                <ul>
+                    <li>Population: 115,162</li>
+                    <li>Employed in Provo: 349,061</li>
+                    <li>Businesses: 8,021</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Calendar</h2>
+                <table>
+                    <caption>December 2024</caption>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thur</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                </table>
+            </section>
+            <section id="googleMap">
+                <h2>Map</h2>
+                <img src="./images/ProvoMap.webp" alt="Map of Provo" width="400" height="289">
+            </section>
+        </main>
         <aside>
-            <a href="https://www.utahvalley.com/listing/provo-pioneer-village/1381/" target="_blank"><img
-                    src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/utahvalley/pioneer-village_30280db7-5056-a36a-0b9b7c6076f7bb3f.jpg"
-                    alt="Provo Pioneer Villiage" width="400" loading="lazy"></a>
-            <a href="https://www.utahvalley.com/listing/downtown-provo-inc/1113/" target="_blank"><img
-                    src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_389,q_65,w_601/v1/crm/utahvalley/Downtown-Provo1-3c897b1d5056a36_3c897c00-5056-a36a-0bd17fd5fc8770a7.jpg"
-                    alt="Downtown Provo" width="400" loading="lazy"></a>
-            <a href="https://www.abc4.com/news/wasatch-front/provo-ranked-as-one-of-the-best-run-cities-in-america/"
-                target="_blank"><img
-                    src="https://www.abc4.com/wp-content/uploads/sites/4/2024/06/AdobeStock_425350253.jpeg?w=1280&h=720&crop=1"
-                    alt="Downtown Provo" width="400" loading="lazy"></a>
-            <a href="https://www.utahvalley.com/listing/the-shops-at-riverwoods/144/" target="_blank"><img
-                    src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/utahvalley/Riverwoods0-71c74df75056a36_71c74eff-5056-a36a-0b19f9e3e5c091da.jpg"
-                    alt="Provo Shops at the Riverwoods" width="400" loading="lazy"></a>
-            <a href="https://www.utahvalley.com/listing/provo-towne-centre/118/" target="_blank"><img
-                    src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_389,q_65,w_601/v1/crm/utahvalley/ProvoTowneCtr0_30975a77-5056-a36a-0bbbdbb70031e7f0.jpg"
-                    alt="Provo Town Center" width="400" loading="lazy"></a>
-            <a href="https://www.utahvalley.com/explore/universities/byu/" target="_blank"><img
-                    src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_905,q_65,w_1920/v1/clients/utahvalley/1278530_0_1463388665_bcfa039e-364a-4f86-8424-f1b66b92d53a.jpg"
-                    alt="Provo, BYU campus arial view" width="400" loading="lazy"></a>
+            <h2 id="visitorMessage"></h2>
+            <section class="gallery">
+                <h3>Historic Provo</h3>
+                <a href="https://www.utahvalley.com/listing/provo-pioneer-village/1381/" target="_blank"><img
+                        src="images/Provo-pioneer-village.webp" alt="Provo Pioneer Villiage" width="400" height="235"
+                        loading="lazy"></a>
+            </section>
+            <section class="gallery">
+                <h3>Bustling Downtown</h3>
+                <a href="https://www.utahvalley.com/listing/downtown-provo-inc/1113/" target="_blank"><img
+                        src="images/Downtown-Provo1.webp" alt="Downtown Provo" width="400" height="250"
+                        loading="lazy"></a>
+                <a href="https://www.abc4.com/news/wasatch-front/provo-ranked-as-one-of-the-best-run-cities-in-america/"
+                    target="_blank"><img src="images/Downtown-Provo2.webp" alt="Downtown Provo" width="400" height="225"
+                        loading="lazy"></a>
+            </section>
+            <section class="gallery">
+                <h3>The Classy Riverwoods</h3>
+                <a href="https://www.utahvalley.com/listing/the-shops-at-riverwoods/144/" target="_blank"><img
+                        src="./images/Provo-Riverwoods.webp" alt="Provo Shops at the Riverwoods" width="400"
+                        height="250" loading="lazy"></a>
+            </section>
+            <section class="gallery">
+                <h3>Accessible Eastbay</h3>
+                <a href="https://www.utahvalley.com/listing/provo-towne-centre/118/" target="_blank"><img
+                        src="./images/ProvoTowne.webp" alt="Provo Town Center" width="400" height="250"
+                        loading="lazy"></a>
+            </section>
+            <section class="gallery">
+                <h3>Business Focused University</h3>
+                <a href="https://www.utahvalley.com/explore/universities/byu/" target="_blank"><img
+                        src="./images/Provo-BYU-Campus.webp" alt="Provo, BYU campus arial view" width="400" height="189"
+                        loading="lazy"></a>
+            </section>
         </aside>
-    </main>
+    </div>
 </body>
 
 <footer>

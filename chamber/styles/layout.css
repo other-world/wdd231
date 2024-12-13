@@ -84,7 +84,7 @@ nav .active {
     float: right;
 }*/
 
-#joinChamber {
+#joinChamber, #content {
     display: grid;
     grid-template-columns:1fr;
 }

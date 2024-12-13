@@ -110,7 +110,7 @@ wddLink.addEventListener('click', () => {
 
 //build button event listeners in for loop
 courses.forEach(element => {
-    const 
+    //const 
 });
 
 // Default * Show all courses

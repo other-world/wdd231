@@ -1,10 +1,9 @@
 welcomeVisitor = document.querySelector('#visitorMessage');
 let message = "";
 
-convertToDay = 24*60*60*1000;
-console.log(convertToDay);
+convertToDay = 24 * 60 * 60 * 1000;
 
-if (localStorage.getItem('lastVisit') != null) {    
+if (localStorage.getItem('lastVisit') != null) {
     oldVisit = Number(localStorage.getItem('lastVisit'));
 
     localStorage.setItem('lastVisit', Date.now());
@@ -16,11 +15,16 @@ if (localStorage.getItem('lastVisit') != null) {
         message = "Back so soon! Awesome!";
     }
     else {
-        message = `You last visited ${visitDifferenceDays} days ago.`;
+        if (visitDifferenceDays = 1) {
+            message = `You last visited ${visitDifferenceDays} day ago.`;
+        }
+        else {
+            message = `You last visited ${visitDifferenceDays} days ago.`;
+        }
     }
 }
 else {
-    message = `Welcome! Let us know if you have any questions.`; 
+    message = `Welcome! Let us know if you have any questions.`;
 }
 
 welcomeVisitor.innerHTML = message;

@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 950px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -34,9 +34,31 @@
         text-decoration: none;
     }
 
-    #joinChamber {
+    #discover, .gallery {
+        max-width: 650px;
+    }
+
+    #discover {
+        justify-content: end;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #joinChamber, #content {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        column-gap: 0;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    #content {
+        grid-template-columns: auto 1fr;
     }
 
     .hero {

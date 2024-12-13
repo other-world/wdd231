@@ -27,7 +27,7 @@ body {
 }
 
 header,
-main,
+main, aside,
 footer {
     margin: 0 auto;
     font-family: var(--paragraph-font);
@@ -122,18 +122,21 @@ h4 {
     opacity: 0.95;
 }
 
+aside {
+    display: block;
+}
+
 section,
-topbar {
-    margin: 20px;
+aside {
+    margin: .5rem;
     padding: 10px;
     border: 1px solid var(--accent1-color);
     border-radius: 10px;
-    margin: 5px;
     box-shadow: 0 0 10px gray;
     background-color: white;
 }
 
-section h2 {
+section h2, aside h2 {
     background-color: var(--accent1-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -238,6 +241,18 @@ div #GoldMembership {
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
+
+.gallery img {
+
+}
+
+.gallery img {
+    transition: transform .2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+  }
 
 figure {
     position: relative;
