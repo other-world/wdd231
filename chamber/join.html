@@ -61,53 +61,56 @@
         </nav>
     </header>
     <main  id="main-grid">
-    <div id="joinChamber">
-        <section id="joinForm">
+        <div id="joinChamber">
+        <section>
             <h2>Membership Application</h2>
             <p>*Indicates a required field</p>
-            <form method="get" action="thankyou.html">
-                <label for="fname">*First name:<br>
-                    <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="John"
-                        required><br>
-                </label>
-                <label for="lname">*Last name:<br>
-                    <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Doe"
-                        required><br><br>
-                </label>
-                <label for="orgTitle">Applicant's Organizational Title:<br>
-                    <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" minlength="7"
-                        pattern="[a-zA-Z0-9\s\-]{7,}"><br><br>
-                </label>
-                <label for="email">*Email:<br>
-                    <input type="email" id="email" name="email" autocomplete="email"
-                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="jdoe234@gmail.com"
-                        required><br><br>
-                </label>
-                <label for="phone">*Phone Number:<br>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel"
-                        pattern="[+]*[1]*[0-9]{3}[-]*[0-9]{3}[-]*[0-9]{4}" required><br><br>
-                </label>
-                <label for="bizName">*Business/Organization Name:<br>
-                    <input type="text" id="bizName" name="bizName" autocomplete="organization" required><br><br>
-                </label>
+            <form method="get" action="thankyou.html" id="joinForm">
+                <fieldset style="width:270px"><legend>Contact Info</legend>
+                    <label for="fname">*First name:<br>
+                        <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="John"
+                            required><br>
+                    </label>
+                    <label for="lname">*Last name:<br>
+                        <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Doe"
+                            required><br><br>
+                    </label>
+                    <label for="orgTitle">Applicant's Organizational Title:<br>
+                        <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" minlength="7"
+                            pattern="[a-zA-Z0-9\s\-]{7,}"><br><br>
+                    </label>
+                    <label for="email">*Email:<br>
+                        <input type="email" id="email" name="email" autocomplete="email"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="jdoe234@gmail.com"
+                            required><br><br>
+                    </label>
+                    <label for="phone">*Phone Number:<br>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel"
+                            pattern="[+]*[1]*[0-9]{3}[-]*[0-9]{3}[-]*[0-9]{4}" required><br><br>
+                    </label>
+                    <label for="bizName">*Business/Organization Name:<br>
+                        <input type="text" id="bizName" name="bizName" autocomplete="organization" required><br><br>
+                    </label>
+                </fieldset>
+                <fieldset><legend>Membership Level</legend>
+                    <p>Mempership Level:<br>
+                        <input type="radio" name="membership" id="NP" value="NP">
+                        <label for="NP">NP (Non-Profit)</label><br>
+                        <input type="radio" name="membership" id="bronze" value="bronze">
+                        <label for="bronze">Bronze</label><br>
+                        <input type="radio" name="membership" id="silver" value="silver">
+                        <label for="silver">Silver</label><br>
+                        <input type="radio" name="membership" id="gold" value="gold">
+                        <label for="gold">Gold</label><br><br>
+                    </p>
 
-                <p>Mempership Level:<br>
-                    <input type="radio" name="membership" id="NP" value="NP">
-                    <label for="NP">NP (Non-Profit)</label><br>
-                    <input type="radio" name="membership" id="bronze" value="bronze">
-                    <label for="bronze">Bronze</label><br>
-                    <input type="radio" name="membership" id="silver" value="silver">
-                    <label for="silver">Silver</label><br>
-                    <input type="radio" name="membership" id="gold" value="gold">
-                    <label for="gold">Gold</label><br><br>
-                </p>
+                    <label for="bizDesc">Description:</label><br>
+                    <textarea id="bizDesc" name="bizDesc" rows="10" cols="30"
+                        placeholder="Tell us about your business..."></textarea><br><br>
 
-                <label for="bizDesc">Description:</label><br>
-                <textarea id="bizDesc" name="bizDesc" rows="10" cols="30"
-                    placeholder="Tell us about your business..."></textarea><br><br>
-
-                <input type="hidden" id="timestamp" name="timestamp">
-                <input type="submit" value="Join Now">
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Join Now">
+                </fieldset>
             </form>
         </section>
 
@@ -121,7 +124,7 @@
                 <p></p>
             </dialog>
         </section>
-    </div>
+        </div>
     </main>
 
     <footer>

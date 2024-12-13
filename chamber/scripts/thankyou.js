@@ -9,6 +9,7 @@ console.log(formData);
 
 
 showInfo.innerHTML = `
+<section>
 <h2>Thank you for applying!</h2>
 <h3>Someone will contact you shortly.</h3>
 <p>First Name: ${show("fname")}</p>
@@ -20,7 +21,7 @@ showInfo.innerHTML = `
 <p>Membership Level: ${show("membership")}</p><br><br>
 <p>Submitted on</>
 <p>${applicationDate}</p>
-
+</section>
 `
 
 

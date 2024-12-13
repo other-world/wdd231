@@ -68,8 +68,8 @@ nav a:link {
 }
 
 .navigation a:hover, navigation a:active {
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: #444;
 }
 
 nav .active {
@@ -78,6 +78,11 @@ nav .active {
     text-decoration: none;
     text-align: center;
 }
+
+/*aside {
+    max-width: 450px;
+    float: right;
+}*/
 
 #joinChamber {
     display: grid;

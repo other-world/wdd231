@@ -43,7 +43,7 @@ footer {
 }
 
 main {
-    width: 98%;    
+    width: 98%;
 }
 
 
@@ -60,7 +60,7 @@ main {
 
 h1,
 h2,
-h3, 
+h3,
 h4 {
     padding: .5rem;
     text-align: center;
@@ -83,7 +83,9 @@ h1 {
     font-weight: 800;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: var(--secondary-color-primary);
     font-family: var(--nav-font);
 }
@@ -103,7 +105,7 @@ h2, h3, h4 {
     width: 20%;
 }
 
-#action h2{
+#action h2 {
     background-color: #000000;
     color: white;
     border-radius: 5px;
@@ -116,11 +118,12 @@ h2, h3, h4 {
     text-decoration: none;
 }
 
-#action h2:hover{
+#action h2:hover {
     opacity: 0.95;
 }
 
-section, topbar {
+section,
+topbar {
     margin: 20px;
     padding: 10px;
     border: 1px solid var(--accent1-color);
@@ -131,12 +134,13 @@ section, topbar {
 }
 
 section h2 {
-    background-color:var(--accent1-color);
+    background-color: var(--accent1-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-input, textarea {
+input,
+textarea {
     border: 2px solid #666;
 }
 
@@ -163,8 +167,13 @@ input, textarea {
 }
 
 @keyframes np {
-    from {box-shadow: 0 0 10px #AAA;}
-    to {box-shadow: 0 0 10px turquoise;}
+    from {
+        box-shadow: 0 0 10px #AAA;
+    }
+
+    to {
+        box-shadow: 0 0 10px turquoise;
+    }
 }
 
 div #NPMembership {
@@ -176,8 +185,13 @@ div #NPMembership {
 }
 
 @keyframes bronze {
-    from {box-shadow: 0 0 10px #AAA;}
-    to {box-shadow: 0 0 10px #ce8946;}
+    from {
+        box-shadow: 0 0 10px #AAA;
+    }
+
+    to {
+        box-shadow: 0 0 10px #ce8946;
+    }
 }
 
 div #BronzeMembership {
@@ -190,8 +204,13 @@ div #BronzeMembership {
 }
 
 @keyframes silver {
-    from {box-shadow: 0 0 10px #AAA;}
-    to {box-shadow: 0 0 10px rgb(216, 216, 216);}
+    from {
+        box-shadow: 0 0 10px #AAA;
+    }
+
+    to {
+        box-shadow: 0 0 10px rgb(216, 216, 216);
+    }
 }
 
 div #SilverMembership {
@@ -203,8 +222,13 @@ div #SilverMembership {
 }
 
 @keyframes gold {
-    from {box-shadow: 0 0 10px #AAA;}
-    to {box-shadow: 0 0 10px gold;}
+    from {
+        box-shadow: 0 0 10px #AAA;
+    }
+
+    to {
+        box-shadow: 0 0 10px gold;
+    }
 }
 
 div #GoldMembership {
@@ -254,7 +278,7 @@ span {
     border-radius: 5px;
 }
 
-#membershipDialog button{
+#membershipDialog button {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -262,7 +286,8 @@ span {
 }
 
 #membershipDialog::backdrop {
-    background-color: rgba(0 0 0 / 50%);;
+    background-color: rgba(0 0 0 / 50%);
+    ;
 }
 
 footer {
@@ -276,8 +301,7 @@ footer p {
     line-height: 0.2;
 }
 
-#chamberInfo {
-}
+#chamberInfo {}
 
 #socialMedia {
     display: flex;
@@ -285,5 +309,4 @@ footer p {
     align-items: center;
 }
 
-#personalInfo {
-}
+#personalInfo {}
