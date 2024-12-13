@@ -34,21 +34,6 @@
         text-decoration: none;
     }
 
-    #discover, .gallery {
-        max-width: 650px;
-    }
-
-    #discover {
-        justify-content: end;
-    }
-
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
     #joinChamber, #content {
         display: grid;
         grid-template-columns: 2fr 1fr;

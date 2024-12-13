@@ -89,6 +89,21 @@ nav .active {
     grid-template-columns:1fr;
 }
 
+#discover, .gallery {
+    max-width: 650px;
+}
+
+#discover {
+    justify-content: end;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 footer div {
     padding: 15px 15px;;
 }
