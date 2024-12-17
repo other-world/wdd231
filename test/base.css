@@ -1,0 +1,4 @@
+ul > li {
+    flex-wrap: wrap;
+    color: aqua;
+}
