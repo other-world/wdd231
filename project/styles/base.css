@@ -24,7 +24,7 @@
 }
 
 body {
-    padding-left: 10rem;
+    box-shadow: 6px 5px 5px var(--accent2-color);
 }
 
 header, footer {
@@ -33,24 +33,20 @@ header, footer {
 }
 header, body, footer {
     width: 100%;
-    max-width: 960px;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 0 auto;
+    padding: .25rem;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 10px 5px 5px var(--accent2-color);
-
 }
-
 
 h1, h2, h3{
     padding: .5rem;
-    text-align:center;
-    margin: auto;
+    text-align:left;
+    margin-left: 1rem;
 }
 
 h1{
@@ -61,10 +57,20 @@ h2{
     background-color: var(--secondary-color);
     color: var(--font1-color);
     font-family: var(--heading-font);
+    text-align: left;
+    border-bottom: 1px solid #152750;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 1000px;
 }
 
-aside {
-    border-left: 3px solid var(--accent2-color) ;
+#navMenu.show {
+    /*border-left: 3px solid var(--accent2-color) ;*/
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+
 }
 
 #menu {
@@ -87,36 +93,51 @@ aside {
 }
 
 .navigation {
+    display: block;
 	list-style: none;
 	margin: 0 auto;
-	max-width: 760px;
+	max-width: 400px;
 }
 
-.navigation li {
+li {
 	display: none;
     width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-.navigation a {
-	display: inline-flex;
+
+a {
 	padding: 1rem;
     vertical-align: middle;
-	text-align: center;
 	text-decoration: none;
 	font-weight: 700;
-	transition: 0.5s;
+	transition: 0.25s;
     color: var(--secondary-color);
+    font-size: large;
 }
 
-.navigation a:hover, navigation a:active {
-    width: 100%;
-	color:var(--nav-hover-link-color);
-	background-color: var(--nav-hover-background-color);
+.navigation a {
+    display: inline-flex;
+    text-align: left;
 }
+
+.navigation a {
+    width: 100%;
+}
+
+.navigation a:hover, .navigation a:active {
+    width: 100%;
+    border-left: 5px solid var(--accent2-color);
+}
+
 
 .show li {
 	display: block;
+}
+
+.navigation .active {
+    background-color:aliceblue;
+    color: var(--font1-color);
 }
 
 li {
@@ -124,11 +145,8 @@ li {
     padding-left: 1.5rem;
 }
 
-p { 
-    color: var(--font1-color);
-    font-family: var( --paragraph-font);
-    padding: 0; 
-    margin: 1rem;
+main {
+    width: 100%;
 }
 
 img {
@@ -138,28 +156,123 @@ img {
     margin: 1rem;
 }
 
-#siteplan {
-    text-align: left;
-}
-
-h2 {
-    text-align: left;
-    border-bottom: 1px solid #152750;
-    margin-top: 1.5rem;
-}
-
-#wireframes {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 1rem;
+p { 
+    color: var(--font1-color);
+    font-family: var( --paragraph-font);
+    padding: 0; 
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
-footer p{
-    color: white;
+#projectInfo {
+    padding-left: 1rem;
 }
+
+footer p {
+    color: var(--font2-color);
+}
+
+footer a {
+    font-size: medium;
+    line-height: .5;
+    padding: .5rem;
+    padding-left: 1rem;
+}
+
+footer a img { 
+    width: 40px;
+}
+
+footer a img:hover {
+    background-color: var(--accent2-color);
+    padding: 5px;
+}
+
+/* -----------Cards-----------*/
+section .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 5px;
+}
+
+img {
+    margin: .5rem auto;
+    /*box-shadow: 0 0 10px grey;*/
+}
+
+.label {
+    font-weight: bold;
+}
+
+#singlepage {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    box-shadow: 0 0 10px grey;
+}
+
+#content {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: #fff;
+    color:rgb(27, 76, 150);
+    padding: 2rem;
+}
+
+#content section {
+    width: 200px;
+    margin: 20px; 
+}
+#content p {
+    font-size: large;
+    margin: 0 auto;
+}
+#content a {
+    color: var(--font1-color);
+    font-size: medium;
+    font-weight: lighter;
+    line-height: .05;
+}
+
+form {
+    margin: 1rem;
+}
+fieldset {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+label {
+    font-weight: lighter;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+}
+
+input[type="submit"]{
+    background-image: linear-gradient(aliceblue, #6992b6);
+    border: none;
+    max-width: 250px;
+    margin: .5rem;
+    padding: 5px;
+    font-size: large;
+}
+
+

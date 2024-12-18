@@ -1,8 +1,13 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 750px){
 
     header{
         display: grid;
-        grid-template-columns: 150px auto 150px;
+        grid-template-columns: 200px auto 150px;
+    }
+
+    h1{
+        align-content: center;
+        width: 100%;
     }
 
     #menu {
@@ -11,14 +16,33 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr 3fr;
-        width: 100%;
-        max-width: 960px;
+        grid-template-columns: 200px auto;
     }
 
-    /* Specific rule for the siteplan. All others shoudl follow an aside-main template */
+    aside {
+        /*border-left: 3px solid var(--accent2-color) ;*/
+        display:block;
+        background-color: var(--primary-color);
+        padding-top: 65px;
+        max-width: 200px;
+        min-height: 1000px;
+    }
+
+    /* Specific rule for the siteplan. All others should follow an aside-main template */
     #single {
         grid-template-columns: 1fr;
+    }
+
+    #singlepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    
+    }
+    #singlepage h3 {
+        grid-column: 1/-1;
+        padding: 1rem;
+    
     }
 
 	.navigation {
@@ -31,4 +55,17 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    #content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 255px));
+        grid-template-rows: auto;
+        justify-content: start;
+        max-width: 100%;
+    }
+
+    input[type="submit"]{
+        grid-column: 1/-1;
+    }
+
 }
