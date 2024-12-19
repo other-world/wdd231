@@ -286,8 +286,8 @@ input[type="submit"]{
     font-size: large;
 }
 
-/******* Weather specific ********/
-.weathercard {
+/******* Weather and Movie specific ********/
+.weathercard, .movieDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,11 +301,16 @@ input[type="submit"]{
     width: 300px;
     height: 300px;
 }
-.weathercard h3 {
+.movieDiv {
+    width: 200px;
+    height: 200px;
+}
+
+.weathercard h3, .movieDiv h3 {
     font-family: var(--heading-font);
 }
 
-#weatherPage {
+#weatherPage, #videoGrid {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;

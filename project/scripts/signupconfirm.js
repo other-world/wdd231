@@ -11,7 +11,7 @@ const thanks = document.createElement("h3");
 thanks.innerHTML = `Thank you for signing up!`;
 showInfo.appendChild(thanks);
 
-paragraph = 
+const queryOutput = 
 `
     ${show("fname")} ${show("lname")} 
     has signed up to work as a ${show("teamMember")} 
@@ -19,7 +19,8 @@ paragraph =
     on ${show("weekend")}
 `;
 
-paragraph.replace(/\+/g, "");
+const paragraph = queryOutput.replace(/\\+/g, ' ');
+console.log(paragraph);
 
 messageP.innerHTML = paragraph;
 
@@ -30,7 +31,7 @@ function show(keyValuePair){
     result = "INVALID KEY";
     formData.forEach(element => {
         if (element.startsWith(keyValuePair)){
-                result = element.split('=')[1];
+                result = element.split('=')[1].replace(/\\+/g, ' ');
         }
 
     });

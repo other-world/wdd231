@@ -68,13 +68,17 @@
         grid-column: 1/-1;
     }
 
-    #weatherPage {
+    #weatherPage, #videoGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
         grid-template-rows: auto;
         justify-content: start;
         width: 100%;
         max-width: 970px;
+    }
+
+    #videoGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
     }
 
 }

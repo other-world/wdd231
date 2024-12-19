@@ -9,10 +9,6 @@ let active = null;
 for (i=0; i<positions.length; i++) {
     positions[i].addEventListener('change', function() {
         active = this.value;
-        /*(prev) ? console.log(prev.value): null;
-        if (this !== prev) {
-            prev = this;
-        }*/
         console.log(active)
         buildTeam(active);
     });
