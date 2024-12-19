@@ -1,0 +1,32 @@
+{
+    "timpLocations": [
+        {
+            "location": "Timp Summit",
+            "simplified": "Summit",
+            "lat": "40.39082",
+            "long": "-111.64598",
+            "apiURL": "https://api.weather.gov/gridpoints/SLC/107,158/forecast"
+        },
+        {
+            "location": "Stewart Falls",
+            "simplified": "StewartFalls",
+            "lat": "40.38629",
+            "long": "-111.60406",
+            "apiURL": "https://api.weather.gov/gridpoints/SLC/108,157/forecast"
+        },
+        {
+            "location": "Timpooneke",
+            "simplified": "Timpooneke",
+            "lat": "40.43132",
+            "long": "-111.63917",
+            "apiURL": "https://api.weather.gov/gridpoints/SLC/107,159/forecast"
+        },
+        {
+            "location": "Aspen Grove",
+            "simplified": "AspenGrove",
+            "lat": "40.40460",
+            "long": "-111.60522",
+            "apiURL": "https://api.weather.gov/gridpoints/SLC/108,158/forecast"
+        }
+    ]
+}

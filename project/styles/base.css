@@ -210,6 +210,7 @@ img {
 }
 
 .label {
+    font-size: larger;
     font-weight: bold;
 }
 
@@ -242,11 +243,21 @@ img {
     font-size: large;
     margin: 0 auto;
 }
-#content a {
+#content a, .inlineLink {
     color: var(--font1-color);
     font-size: medium;
     font-weight: lighter;
     line-height: .05;
+}
+
+.inlineLink {
+    margin:0;
+    padding:0;
+}
+
+.reference {
+    margin-left: 30px;
+    padding: 1rem;
 }
 
 form {
@@ -274,5 +285,87 @@ input[type="submit"]{
     padding: 5px;
     font-size: large;
 }
+
+/******* Weather specific ********/
+.weathercard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid rgb(2, 62, 183);
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    margin: 3px;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+}
+.weathercard h3 {
+    font-family: var(--heading-font);
+}
+
+#weatherPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+#locationLimiter {
+    display: flex;
+    max-width: 970px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#locationLimiter span {
+    font-size: large;
+}
+#locationLimiter p {
+    font-size: larger;
+}
+
+#locationLimiter input[type="radio"] {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+/******* Signup Form Specific ********/
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 970px;
+}
+
+#positionLimiter, #teamPositions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#positionLimiter label, #teamPositions label {
+    font-size: larger;
+}
+
+#positionLimiter input[type="radio"],
+#teamPositions input[type="radio"] {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+#availablePositions .hidden {
+    display: none;
+}
+
 
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERT Member Page</title>
-    <meta name="description" content="Project page for WDD 131, the start of a login zone for members">
+    <meta name="description" content="Project page for WDD 231, the start of a login zone for members">
     <meta name="author" content="Jamie Cummings">
 
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -18,6 +18,7 @@
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/weekendSignup.js" defer></script>
 
 
     <!-- Google Fonts -->
@@ -31,18 +32,18 @@
         rel="stylesheet">
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="WDD131 Landing page for Jamie Cummings">
+    <meta property="og:title" content="WDD231 Landing page for Jamie Cummings">
     <meta property="og:description"
-        content="WDD131 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings.">
-    <meta property="og:image" content="https://other-world.github.io/wdd131/project/images/tertLogo.webp">
+        content="WDD231 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings.">
+    <meta property="og:image" content="https://other-world.github.io/wdd231/project/images/tertLogo.webp">
     <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:title"
-        content="WDD131 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings">
+        content="WDD231 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings">
     <meta name="twitter:description"
-        content="WDD131 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings.">
-    <meta name="twitter:image" content="https://other-world.github.io/wdd131/project/images/tertLogo.webp">
+        content="WDD231 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings.">
+    <meta name="twitter:image" content="https://other-world.github.io/wdd231/project/images/tertLogo.webp">
     <meta name="twitter:card" content="summary_large_image">
 
 </head>
@@ -62,17 +63,68 @@
                 <ul class="navigation">
                     <li><a href="index.html" aria-label="Summary">Summary</a></li>
                     <li><a href="updateContactInfo.html" aria-label="Update Contact Info">Update Info</a></li>
-                    <li><a href="certifications.html" aria-label="Update Certifications">Update<br>&emsp;Certifications</a></li>
+                    <li><a href="certifications.html"
+                            aria-label="Update Certifications">Update<br>&emsp;Certifications</a></li>
                     <li><a href="training.html" aria-label="Training">Training</a></li>
-                    <li><a href="signup.html" aria-label="Weekend Signups" class="active">Weekend<br>&emsp;Signups</a></li>
+                    <li><a href="signup.html" aria-label="Weekend Signups" class="active">Weekend<br>&emsp;Signups</a>
+                    </li>
                     <li><a href="members.html" aria-label="Member List">MemberList</a></li>
+                    <li><a href="weather.html" aria-label="Weather Page">Weather</a></li>
                 </ul>
             </nav>
         </aside>
         <div>
-            <h2>Future content, outside the scope of WDD131</h2>
+            <h2>Future content, outside the scope of WDD231</h2>
             <div id="singlepage">
-                <!-- Generated with Javascript -->
+                <form method="get" action="signupResults.html" id="signupForm" name="signupForm">
+                    <div id="mainForm">
+                        <fieldset>
+                            <legend>Personal Info</legend>
+                            <label for="fname">*First name:<br>
+                                <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="John"
+                                    required><br>
+                            </label>
+                            <label for="lname">*Last name:<br>
+                                <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Doe"
+                                    required><br><br>
+                            </label>
+
+                            <label for="weekend">Weekend:<br>
+                                <input type="date" id="weekend" name="weekend" min="2025-05-23" max="2025-09-21" required>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Position</legend>
+                            <div id="positionLimiter">
+                                <span>
+                                    <label for="ag">
+                                        <input type="radio" name="position" id="ag" value="Aspen Grove">
+                                        Aspen Grove Trailhead</label>
+                                </span>
+
+                                <span>
+                                    <label for="sf">
+                                        <input type="radio" name="position" id="sf" value="Stewart Falls">
+                                        Stewart Falls</label>
+                                </span>
+
+                                <span>
+                                    <label for="timpooneke">
+                                        <input type="radio" name="position" id="timpooneke" value="Timpooneke">
+                                        Timpooneke</label>
+                                </span>
+
+                                <span>
+                                    <label for="hc">
+                                        <input type="radio" name="position" id="hc" value="High Camp">
+                                        High Camp</label>
+                                </span>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="submitButton"></div>
+                </form>
             </div>
         </div>
 
@@ -80,7 +132,7 @@
 
     <footer>
         <div id="projectInfo">
-            <p>WDD131 Class Project</p>
+            <p>WDD231 Class Project</p>
             <p>Jamie Cummings</p>
             <a href="siteplan.html">SitePlan</a>
         </div>

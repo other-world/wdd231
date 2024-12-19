@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERT Member Page</title>
-    <meta name="description" content="Project page for WDD 231, the start of a login zone for members">
+    <meta name="description" content="Project page for WDD 231, continued work on a login zone for members">
     <meta name="author" content="Jamie Cummings">
 
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/base-large.css">
 
-
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
-    <script src="./scripts/memberCards.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
 
 
     <!-- Google Fonts -->
@@ -36,7 +35,7 @@
     <meta property="og:description"
         content="WDD231 focuses on Frontend Web Development Skill. This page shows the work done by Jamie Cummings.">
     <meta property="og:image" content="https://other-world.github.io/wdd231/project/images/tertLogo.webp">
-    <meta property="og:url" content="https://other-world.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://other-world.github.io/wdd231/project/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:title"
@@ -64,18 +63,51 @@
                     <li><a href="index.html" aria-label="Summary">Summary</a></li>
                     <li><a href="updateContactInfo.html" aria-label="Update Contact Info">Update Info</a></li>
                     <li><a href="certifications.html"
-                            aria-label=" Update Certifications">Update<br>&emsp;Certifications</a></li>
+                            aria-label="Update Certifications">Update<br>&emsp;Certifications</a></li>
                     <li><a href="training.html" aria-label="Training">Training</a></li>
                     <li><a href="signup.html" aria-label="Weekend Signups">Weekend<br>&emsp;Signups</a></li>
-                    <li><a href="members.html" aria-label="Member List" class="active">MemberList</a></li>
-                    <li><a href="weather.html" aria-label="Weather Page">Weather</a></li>
+                    <li><a href="members.html" aria-label="Member List">Member List</a></li>
+                    <li><a href="weather.html" aria-label="Weather Page" class="active">Weather</a></li>
                 </ul>
             </nav>
         </aside>
         <div>
-            <h2>Current Roster</h2>
-            <div id="content">
+            <h2>Current Weather Report</h2>
+            <div id="locationLimiter"><p>Mountain Locations:</p>
+                <span>
+                    <label for="all">
+                    <input type="radio" name="mloc" id="all" value="All" checked="checked">
+                    All</label>
+                </span>
+
+                <span> 
+                    <label for="summit">
+                    <input type="radio" name="mloc" id="summit" value="Summit">
+                    Summit</label>
+                </span>
+
+                <span>
+                    <label for="Stewart Falls">
+                    <input type="radio" name="mloc" id="stewartfalls" value="StewartFalls">
+                    Stewart Falls</label>
+                </span>
+
+                <span>
+                    <label for="aspengrove">
+                    <input type="radio" name="mloc" id="aspengrove" value="AspenGrove">
+                    Aspen Grove</label>
+                </span>
+
+                <span>
+                    <label for="timpooneke">
+                    <input type="radio" name="mloc" id="timpooneke" value="Timpooneke">
+                    Timpooneke</label>
+                </span>
             </div>
+            <div id="weatherPage">
+                <!-- Generated with Javascript -->
+            </div>
+            <p class="reference">Courtesy of <a href="https://weather.gov" class="inlineLink">NOAA</a></p>
         </div>
 
     </main>
