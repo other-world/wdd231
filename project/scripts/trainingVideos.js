@@ -75,13 +75,15 @@ function videoCardBuilder(videoArray, limiter){
             const thumbnail = document.createElement("img");
             if (element.thumbnail == ""){
                 thumbnail.setAttribute("src", "images/movieIcon.png");
+                thumbnail.setAttribute("width", "50");
+                thumbnail.setAttribute("height", "50");
             }
             else {
                 thumbnail.setAttribute("src", element.thumbnail);
+                thumbnail.setAttribute("width", "150");
+                thumbnail.setAttribute("height", "105");
             }
             thumbnail.setAttribute("alt", element.title);
-            thumbnail.setAttribute("width", "50");
-            thumbnail.setAttribute("height", "50");
             thumbnail.setAttribute("loading", "lazy");
             movieDiv.appendChild(thumbnail);
 
