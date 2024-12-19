@@ -2,6 +2,8 @@ const locationFile = "./data/training.json";
 const tertVideos = document.querySelector('#tertVideos');
 
 const selectTag = document.querySelector('#tagDropdown');
+
+
 const videoGrid = document.querySelector('#videoGrid');
 
 let tagList = [];
@@ -53,8 +55,9 @@ function buildTagDropdown(tags) {
         tags.forEach(tag => {
             //console.log(tag);
             const tagOption = document.createElement("option");
-            tagOption.setAttribute("value", `${tag}`);
-            tagOption.textContent = `${tag}`;
+            tagOption.setAttribute("value", tag);
+            tagOption.setAttribute("name", tag);
+            tagOption.textContent = tag;
             selectTag.appendChild(tagOption);
         });
     
@@ -103,60 +106,3 @@ function videoCardBuilder(videoArray, limiter){
         }
         });
 }
-
-/*async function getForecast(apiURL, location) {
-    try {
-    const response = await fetch(apiURL);
-    if (response.ok) {
-        const weatherData = await response.json();
-        condensedLocation = location.replace(/\s/g, "");
-
-        //Build a weather Card
-        const newCard = document.createElement("section");
-        newCard.setAttribute("class", "weathercard");
-        newCard.setAttribute("id", `${condensedLocation}Weather`);
-            const thisLocation = document.createElement("h3");
-            thisLocation.innerHTML = `${location}`;
-            newCard.appendChild(thisLocation); 
-
-            chill = calulateWindChill(weatherData.properties.periods[0].temperature, weatherData.properties.periods[0].windSpeed);
-
-
-            const icon = document.createElement("img");
-            icon.setAttribute("src", `${weatherData.properties.periods[0].icon}`);
-            icon.setAttribute("alt", `Weather Icon`);
-            icon.setAttribute("width", "86");
-            icon.setAttribute("height", "86");
-            icon.setAttribute("loading", "lazy");
-
-            newCard.appendChild(icon);
-
-            const temperature = document.createElement("p");
-            temperature.innerHTML = `<b>Current Temp:</b> ${weatherData.properties.periods[0].temperature}°F`;
-            newCard.appendChild(temperature);
-
-            const humidity = document.createElement("p");
-            humidity.innerHTML = `<b>Humidity:</b> ${weatherData.properties.periods[0].relativeHumidity}°F`;
-            newCard.appendChild(humidity);
-
-            const windspeed = document.createElement("p");
-            windspeed.innerHTML = `<b>Windspeed:</b> ${weatherData.properties.periods[0].windSpeed} ${weatherData.properties.periods[0].windDirection}`;
-            newCard.appendChild(windspeed);
-
-
-            const windchill = document.createElement("p");
-            windchill.innerHTML = `<b>WindChill:</b> ${chill}°F`;
-            newCard.appendChild(windchill);
-
-        currentTemp.appendChild(newCard);
-
-        }
-        else {
-            throw new Error(`Response status: ${response.status}`);
-        }
-    }
-
-    catch (error) {
-        console.error(error.message);
-    }
-}*/

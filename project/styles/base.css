@@ -153,7 +153,8 @@ img {
     height: auto;
     padding: 2px;
     box-shadow: 0 0 10px gray;
-    margin: 1rem;
+    margin: .5rem auto;
+
 }
 
 p { 
@@ -167,6 +168,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1rem;
+    border-top: 5px solid var(--accent2-color);
 }
 
 #projectInfo {
@@ -202,11 +204,6 @@ section .card {
     margin: 0px;
     border: 1px solid rgb(165, 164, 164);
     border-radius: 5px;
-}
-
-img {
-    margin: .5rem auto;
-    /*box-shadow: 0 0 10px grey;*/
 }
 
 .label {
@@ -340,6 +337,10 @@ input[type="submit"]{
     margin-left: 15px;
     width: 24px;
     height: 24px;
+}
+
+#filterDiv {
+    margin: 1rem 2.5rem;
 }
 
 /******* Signup Form Specific ********/

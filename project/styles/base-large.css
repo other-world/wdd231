@@ -3,6 +3,7 @@
     header{
         display: grid;
         grid-template-columns: 200px auto 150px;
+        border-bottom: 5px solid var(--accent2-color);
     }
 
     h1{
@@ -23,6 +24,7 @@
         /*border-left: 3px solid var(--accent2-color) ;*/
         display:block;
         background-color: var(--primary-color);
+        border-right: 5px solid var(--accent2-color);
         padding-top: 65px;
         max-width: 200px;
         min-height: 1000px;
