@@ -1,110 +1,111 @@
 const locationFile = "./data/training.json";
 const tertVideos = document.querySelector('#tertVideos');
-
 const selectTag = document.querySelector('#tagDropdown');
-
-
 const videoGrid = document.querySelector('#videoGrid');
 
 let tagList = [];
 
-openTrainingJSON("All"); //openTrainingGrid
+// Check for data that filters the videos.
+const currentURL = window.location.href;
+const everything = currentURL.split('?');
 
-const dropdown = document.getElementById('tagDropdown');
-
-/*dropdown.addEventListener('change', function() {
-  // Get the selected value
-  const selectedValue = this.value;
-
-  // Do something with the selected value
-  console.log('Selected value:', selectedValue);
-});*/
+if (everything[1] != null) {
+    const formData = everything[1].split('&');
+    formData.forEach(element => {
+        if (element.startsWith("tagDropDown")) {
+            result = element.split('=')[1];
+            result = result.replace(/\+/g, " ");
+            openTrainingJSON(result)
+        }
+    })
+}
+else {
+    openTrainingJSON("All"); //openTrainingGrid
+}
 
 async function openTrainingJSON(specifier) {
     try {
-      const response = await fetch(locationFile);
-      if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
-      }
-  
-      const trainingList = await response.json();
+        const response = await fetch(locationFile);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
 
-      // Build a list of tags that we will use for possible filters
-      trainingList.trainingvideos.forEach(element => {
-        element.tags.forEach(tag => {
-            if (tagList.includes(tag) == false){
-                tagList.push(tag);
-            }
+        const trainingList = await response.json();
+
+        // Build a list of tags that we will use for possible filters
+        trainingList.trainingvideos.forEach(element => {
+            element.tags.forEach(tag => {
+                if (tagList.includes(tag) == false) {
+                    tagList.push(tag);
+                }
+            });
+
         });
-        
-      });
-      buildTagDropdown(tagList);
+        buildTagDropdown(tagList);
+        console.log(`Specifier: ${specifier}`);
 
-      // Build Cards for each video
-      videoCardBuilder(trainingList.trainingvideos, specifier);
+        // Build Cards for each video
+        const videoArray = trainingList.trainingvideos;
+        if (specifier == 'All') {
+            videoCardBuilder(videoArray);
+        }
+        else {
+            const filteredMovies = videoArray.filter(video => {
+                return video.tags.includes(specifier)
+            });
+            videoCardBuilder(filteredMovies);
+        }
     }
-  
     catch (error) {
-      console.error(error.message);
+        console.error(error.message);
     }
-  
+
 }
 
 function buildTagDropdown(tags) {
 
-        tags.forEach(tag => {
-            //console.log(tag);
-            const tagOption = document.createElement("option");
-            tagOption.setAttribute("value", tag);
-            tagOption.setAttribute("name", tag);
-            tagOption.textContent = tag;
-            selectTag.appendChild(tagOption);
-        });
-    
-        filterDiv.appendChild(selectTag);
+    tags.forEach(tag => {
+        const tagOption = document.createElement("option");
+        tagOption.setAttribute("id", tag);
+        tagOption.setAttribute("value", tag);
+        tagOption.textContent = tag;
+        selectTag.appendChild(tagOption);
+    });
 }
 
-function videoCardBuilder(videoArray, limiter){
-    console.log("Entering card builder..")
-    videoGrid.innerHTML="";
+function videoCardBuilder(videoArray) {
+    //console.log("Entering card builder..")
+    videoGrid.innerHTML = "";
     videoArray.forEach(element => {
-        console.log(element.title);
 
         const movieDiv = document.createElement("div");
         movieDiv.setAttribute("class", "movieDiv");
-            const thumbnail = document.createElement("img");
-            if (element.thumbnail == ""){
-                thumbnail.setAttribute("src", "images/movieIcon.png");
-                thumbnail.setAttribute("width", "50");
-                thumbnail.setAttribute("height", "50");
-            }
-            else {
-                thumbnail.setAttribute("src", element.thumbnail);
-                thumbnail.setAttribute("width", "150");
-                thumbnail.setAttribute("height", "105");
-            }
-            thumbnail.setAttribute("alt", element.title);
-            thumbnail.setAttribute("loading", "lazy");
-            movieDiv.appendChild(thumbnail);
+        const thumbnail = document.createElement("img");
+        if (element.thumbnail == "") {
+            thumbnail.setAttribute("src", "images/movieIcon.png");
+            thumbnail.setAttribute("width", "50");
+            thumbnail.setAttribute("height", "50");
+        }
+        else {
+            thumbnail.setAttribute("src", element.thumbnail);
+            thumbnail.setAttribute("width", "150");
+            thumbnail.setAttribute("height", "105");
+        }
+        thumbnail.setAttribute("alt", element.title);
+        thumbnail.setAttribute("loading", "lazy");
+        movieDiv.appendChild(thumbnail);
 
-            const movieTitle = document.createElement("h3");
-            movieTitle.textContent = element.title;
-            movieDiv.appendChild(movieTitle);
+        const movieTitle = document.createElement("h3");
+        movieTitle.textContent = element.title;
+        movieDiv.appendChild(movieTitle);
 
-            const movieLink = document.createElement("a");
-            movieLink.setAttribute("href", element.path);
-            movieLink.setAttribute("target", "_blank");
-            movieLink.setAttribute("class", "inlineLink");
-            movieLink.textContent = "View";
-            movieDiv.appendChild(movieLink);
+        const movieLink = document.createElement("a");
+        movieLink.setAttribute("href", element.path);
+        movieLink.setAttribute("target", "_blank");
+        movieLink.setAttribute("class", "inlineLink");
+        movieLink.textContent = "View";
+        movieDiv.appendChild(movieLink);
 
         videoGrid.appendChild(movieDiv);
-
-        if (limiter == "All"){
-            //getForecast(videoArray, element.location);
-        }
-        else if (element.simplified == limiter) {
-            //getForecast(element.apiURL, limiter);
-        }
-        });
+    });
 }

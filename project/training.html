@@ -76,12 +76,13 @@
         <div>
             <h2>Training Videos</h2>
             <div id="tertVideos">
-                <div id="filterDiv">
-                    <label id="filterLabel" for="tags">Filter Videos</label>
-                    <select id="tagDropdown">
-                    <!-- Populated by Javascript -->
+                <form id="filterDiv" method="get" action="training.html">
+                    <select name="tagDropDown" id="tagDropdown">
+                        <option id="all" value="All">All</option>
+                        <!-- Populated by Javascript -->
                     </select>
-                </div>
+                    <input type="submit" name="filter" value="Filter results">
+                </form>
                 <div id="videoGrid">
 
                 </div>
