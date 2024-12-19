@@ -31,7 +31,7 @@ function show(keyValuePair){
     result = "INVALID KEY";
     formData.forEach(element => {
         if (element.startsWith(keyValuePair)){
-                result = element.split('=')[1].replace(/\\+/g, ' ');
+                result = element.split('=')[1].replace(/\+/g, " ");
         }
 
     });
