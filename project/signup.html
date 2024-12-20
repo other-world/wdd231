@@ -18,7 +18,7 @@
     <!-- Supporting Javascript -->
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/menu.js" defer></script>
-    <script src="./scripts/weekendSignup.js" defer></script>
+    <script src="./scripts/weekend-signup.js" defer></script>
 
 
     <!-- Google Fonts -->
@@ -74,9 +74,9 @@
             </nav>
         </aside>
         <div>
-            <h2>Future content, outside the scope of WDD231</h2>
+            <h2>Weekend Signups</h2>
             <div id="singlepage">
-                <form method="get" action="signupResults.html" id="signupForm" name="signupForm">
+                <form method="get" action="signup-results.html" id="signupForm" name="signupForm">
                     <div id="mainForm">
                         <fieldset>
                             <legend>Personal Info</legend>
@@ -92,6 +92,14 @@
                             <label for="weekend">Weekend:<br>
                                 <input type="date" id="weekend" name="weekend" min="2025-05-23" max="2025-09-21" required>
                             </label>
+                            <button class="button open-modal">Sign Up</button>
+
+                            <dialog class="modal" id="modal">
+                              <h2>Remember</h2>
+                              <p>While emergencies do come up, please do your best to commit to any weekend for which you sign up. Cancellations might result in too few team members, or a vacancy at a major hub on the mountain.</p>
+                              <button class="close-modal">x</button>
+                            </dialog>
+                            
                         </fieldset>
 
                         <fieldset>

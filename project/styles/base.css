@@ -168,7 +168,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1rem;
-    border-top: 5px solid var(--accent2-color);
 }
 
 #projectInfo {
@@ -215,9 +214,8 @@ section .card {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 400px;
-    margin-left: 1rem;
-    margin-top: .5rem;
-    padding: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
     border-radius: 2px;
     box-shadow: 0 0 10px grey;
 }
@@ -373,5 +371,32 @@ input[type="submit"]{
     display: none;
 }
 
+.modal {
+    padding: 1rem;
+    max-width: 350px;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    background-color: rgb(246, 236, 190);
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 5px;
+  }
 
+.modal h2 {
+    border: none;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    font-size: x-large;
+    box-shadow: .25rem .25rem .75rem rgb(0 0 0 / 0.3);
+}
+  
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
 

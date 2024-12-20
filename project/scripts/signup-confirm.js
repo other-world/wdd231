@@ -5,8 +5,6 @@ const messageP = document.createElement("p");
 const everything = currentURL.split('?');
 const formData = everything[1].split('&');
 
-console.log(formData);
-
 const thanks = document.createElement("h3");
 thanks.innerHTML = `Thank you for signing up!`;
 showInfo.appendChild(thanks);
@@ -20,7 +18,6 @@ const queryOutput =
 `;
 
 const paragraph = queryOutput.replace(/\\+/g, ' ');
-console.log(paragraph);
 
 messageP.innerHTML = paragraph;
 

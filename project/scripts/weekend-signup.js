@@ -3,13 +3,23 @@ const formAdditions = document.querySelector("#mainForm");
 const positionFieldset = document.createElement("fieldset");
 const submitPosition = document.querySelector('#submitButton');
 
-console.log(positions);
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-modal");
+const closeModal = document.querySelector(".close-modal");
+
+openModal.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
+
 
 let active = null;
 for (i=0; i<positions.length; i++) {
     positions[i].addEventListener('change', function() {
         active = this.value;
-        console.log(active)
         buildTeam(active);
     });
 }

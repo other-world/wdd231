@@ -1,5 +1,9 @@
 @media screen and (min-width: 750px){
 
+    body{
+        height: 100%;
+    }
+
     header{
         display: grid;
         grid-template-columns: 200px auto 150px;
@@ -27,7 +31,6 @@
         border-right: 5px solid var(--accent2-color);
         padding-top: 65px;
         max-width: 200px;
-        min-height: 1000px;
     }
 
     /* Specific rule for the siteplan. All others should follow an aside-main template */

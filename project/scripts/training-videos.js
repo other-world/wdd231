@@ -42,7 +42,6 @@ async function openTrainingJSON(specifier) {
 
         });
         buildTagDropdown(tagList);
-        console.log(`Specifier: ${specifier}`);
 
         // Build Cards for each video
         const videoArray = trainingList.trainingvideos;
@@ -74,7 +73,6 @@ function buildTagDropdown(tags) {
 }
 
 function videoCardBuilder(videoArray) {
-    //console.log("Entering card builder..")
     videoGrid.innerHTML = "";
     videoArray.forEach(element => {
 

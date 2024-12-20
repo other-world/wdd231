@@ -12,11 +12,10 @@ getMemberData();
 
 
 if (everything.length == 1) {
-    console.log("No form data sent");
+    // No form data sent;
 }
 else {
     const formData = everything[1].split('&');
-    console.log("We have a Form");
     updateMemberSummary(formData);
 
 }    
@@ -124,12 +123,10 @@ function getMemberSummary(currentMember){
 }
 
 function updateMemberSummary(newData) {
-    console.log(newData);
     newData.forEach(item => {
         let breakdown = item.split('=');
         let itemKey = breakdown[0];
         let itemValue = breakdown[1];
-        console.log(`Key: ${itemKey}`);
         if (itemValue != ""){
             console.log(document.getElementById(itemKey));
             //console.log(updateElement);

@@ -8,8 +8,6 @@ const formData = everything[1].split('&');
 let medMember="no";
 let radioMember="no";
 
-console.log(formData);
-
 const thanks = document.createElement("h3");
 thanks.innerHTML = `Thank you for updating!`;
 showInfo.appendChild(thanks);
